@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 小全同学</title>
+  <title>小全同学</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="小程序内置常用组件 Created By 小全同学  [TOC] view视图容器，相当于div标签    属性名 类型 默认值 说明 最低版本     hover-class String none 指定按下去的样式类。当 hover-class=&amp;quot;none&amp;quot; 时，没有点击态效果    hover-stop-propagation Boolean false 指定是否阻止本节">
+<meta property="og:type" content="article">
 <meta property="og:title" content="小全同学">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/12/14/微信小程序04——小程序常用内置组件/index.html">
 <meta property="og:site_name" content="小全同学">
+<meta property="og:description" content="小程序内置常用组件 Created By 小全同学  [TOC] view视图容器，相当于div标签    属性名 类型 默认值 说明 最低版本     hover-class String none 指定按下去的样式类。当 hover-class=&amp;quot;none&amp;quot; 时，没有点击态效果    hover-stop-propagation Boolean false 指定是否阻止本节">
 <meta property="og:locale" content="小全同学">
+<meta property="og:updated_time" content="2018-07-12T08:13:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小全同学">
+<meta name="twitter:description" content="小程序内置常用组件 Created By 小全同学  [TOC] view视图容器，相当于div标签    属性名 类型 默认值 说明 最低版本     hover-class String none 指定按下去的样式类。当 hover-class=&amp;quot;none&amp;quot; 时，没有点击态效果    hover-stop-propagation Boolean false 指定是否阻止本节">
   
     <link rel="alternative" href="/atom.xml" title="小全同学" type="application/atom+xml">
   
@@ -150,127 +154,923 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-微信小程序04——小程序常用内置组件" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="小程序内置常用组件"><a href="#小程序内置常用组件" class="headerlink" title="小程序内置常用组件"></a>小程序内置常用组件</h1><blockquote>
+<p>Created By 小全同学</p>
+</blockquote>
+<p>[TOC]</p>
+<h2 id="view"><a href="#view" class="headerlink" title="view"></a>view</h2><p>视图容器，相当于<code>div</code>标签</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hover-class</td>
+<td>String</td>
+<td>none</td>
+<td>指定按下去的样式类。当 <code>hover-class=&quot;none&quot;</code> 时，没有点击态效果</td>
+<td></td>
+</tr>
+<tr>
+<td>hover-stop-propagation</td>
+<td>Boolean</td>
+<td>false</td>
+<td>指定是否阻止本节点的祖先节点出现点击态</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.5.0</a></td>
+</tr>
+<tr>
+<td>hover-start-time</td>
+<td>Number</td>
+<td>50</td>
+<td>按住后多久出现点击态，单位毫秒</td>
+<td></td>
+</tr>
+<tr>
+<td>hover-stay-time</td>
+<td>Number</td>
+<td>400</td>
+<td>手指松开后点击态保留时间，单位毫秒</td>
+</tr>
+</tbody>
+</table>
+<h2 id="icon"><a href="#icon" class="headerlink" title="icon"></a>icon</h2><p>图标。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>String</td>
+<td></td>
+<td>icon的类型，有效值：success, success_no_circle, info, warn, waiting, cancel, download, search, clear</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Number</td>
+<td>23</td>
+<td>icon的大小，单位px</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td></td>
+<td>icon的颜色，同css的color</td>
+</tr>
+</tbody>
+</table>
+<p>示例代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;view class=&quot;group&quot;&gt;</span><br><span class="line">  &lt;block wx:for=&quot;&#123;&#123;iconSize&#125;&#125;&quot;&gt;</span><br><span class="line">    &lt;icon type=&quot;success&quot; size=&quot;&#123;&#123;item&#125;&#125;&quot;/&gt;</span><br><span class="line">  &lt;/block&gt;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line"></span><br><span class="line">&lt;view class=&quot;group&quot;&gt;</span><br><span class="line">  &lt;block wx:for=&quot;&#123;&#123;iconType&#125;&#125;&quot;&gt;</span><br><span class="line">    &lt;icon type=&quot;&#123;&#123;item&#125;&#125;&quot; size=&quot;40&quot;/&gt;</span><br><span class="line">  &lt;/block&gt;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;view class=&quot;group&quot;&gt;</span><br><span class="line">  &lt;block wx:for=&quot;&#123;&#123;iconColor&#125;&#125;&quot;&gt;</span><br><span class="line">    &lt;icon type=&quot;success&quot; size=&quot;40&quot; color=&quot;&#123;&#123;item&#125;&#125;&quot;/&gt;</span><br><span class="line">  &lt;/block&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">Page(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    iconSize: [20, 30, 40, 50, 60, 70],</span><br><span class="line">    iconColor: [</span><br><span class="line">      &apos;red&apos;, &apos;orange&apos;, &apos;yellow&apos;, &apos;green&apos;, &apos;rgb(0,255,255)&apos;, &apos;blue&apos;, &apos;purple&apos;</span><br><span class="line">    ],</span><br><span class="line">    iconType: [</span><br><span class="line">      &apos;success&apos;, &apos;success_no_circle&apos;, &apos;info&apos;, &apos;warn&apos;, &apos;waiting&apos;, &apos;cancel&apos;, &apos;download&apos;, &apos;search&apos;, &apos;clear&apos;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="text"><a href="#text" class="headerlink" title="text"></a>text</h2><p>文本。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>selectable</td>
+<td>Boolean</td>
+<td>false</td>
+<td>文本是否可选</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
+</tr>
+<tr>
+<td>space</td>
+<td>String</td>
+<td>false</td>
+<td>显示连续空格</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
+</tr>
+<tr>
+<td>decode</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否解码</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>space 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ensp</td>
+<td>中文字符空格一半大小</td>
+</tr>
+<tr>
+<td>emsp</td>
+<td>中文字符空格大小</td>
+</tr>
+<tr>
+<td>nbsp</td>
+<td>根据字体设置的空格大小</td>
+</tr>
+</tbody>
+</table>
+<h5 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h5><ul>
+<li>decode可以解析的有 <code>&amp;nbsp;</code> <code>&amp;lt;</code> <code>&amp;gt;</code> <code>&amp;amp;</code> <code>&amp;apos;</code> <code>&amp;ensp;</code> <code>&amp;emsp;</code></li>
+<li>各个操作系统的空格标准并不一致。</li>
+<li><code>&lt;text/&gt;</code> 组件内只支持 <code>&lt;text/&gt;</code> 嵌套。</li>
+<li>除了文本节点以外的其他节点都无法长按选中。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;view class=&quot;btn-area&quot;&gt;</span><br><span class="line">  &lt;view class=&quot;body-view&quot;&gt;</span><br><span class="line">    &lt;text&gt;&#123;&#123;text&#125;&#125;&lt;/text&gt;</span><br><span class="line">    &lt;button bindtap=&quot;add&quot;&gt;add line&lt;/button&gt;</span><br><span class="line">    &lt;button bindtap=&quot;remove&quot;&gt;remove line&lt;/button&gt;</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">var initData = &apos;this is first line\nthis is second line&apos;</span><br><span class="line">var extraLine = [];</span><br><span class="line">Page(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    text: initData</span><br><span class="line">  &#125;,</span><br><span class="line">  add: function(e) &#123;</span><br><span class="line">    extraLine.push(&apos;other line&apos;)</span><br><span class="line">    this.setData(&#123;</span><br><span class="line">      text: initData + &apos;\n&apos; + extraLine.join(&apos;\n&apos;)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  remove: function(e) &#123;</span><br><span class="line">    if (extraLine.length &gt; 0) &#123;</span><br><span class="line">      extraLine.pop()</span><br><span class="line">      this.setData(&#123;</span><br><span class="line">        text: initData + &apos;\n&apos; + extraLine.join(&apos;\n&apos;)</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="progress"><a href="#progress" class="headerlink" title="progress"></a>progress</h2><p>进度条。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>percent</td>
+<td>Float</td>
+<td>无</td>
+<td>百分比0~100</td>
+</tr>
+<tr>
+<td>show-info</td>
+<td>Boolean</td>
+<td>false</td>
+<td>在进度条右侧显示百分比</td>
+</tr>
+<tr>
+<td>stroke-width</td>
+<td>Number</td>
+<td>6</td>
+<td>进度条线的宽度，单位px</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>#09BB07</td>
+<td>进度条颜色 （请使用 activeColor）</td>
+</tr>
+<tr>
+<td>activeColor</td>
+<td>Color</td>
+<td></td>
+<td>已选择的进度条的颜色</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>Color</td>
+<td></td>
+<td>未选择的进度条的颜色</td>
+</tr>
+<tr>
+<td>active</td>
+<td>Boolean</td>
+<td>false</td>
+<td>进度条从左往右的动画</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;progress percent=&quot;20&quot; show-info /&gt;</span><br><span class="line">&lt;progress percent=&quot;40&quot; stroke-width=&quot;12&quot; /&gt;</span><br><span class="line">&lt;progress percent=&quot;60&quot; color=&quot;pink&quot; /&gt;</span><br><span class="line">&lt;progress percent=&quot;80&quot; active /&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="button"><a href="#button" class="headerlink" title="button"></a>button</h2><p>按钮。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>生效时机</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>size</td>
+<td>String</td>
+<td>default</td>
+<td>按钮的大小</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>default</td>
+<td>按钮的样式类型</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>plain</td>
+<td>Boolean</td>
+<td>false</td>
+<td>按钮是否镂空，背景色透明</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否禁用</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>loading</td>
+<td>Boolean</td>
+<td>false</td>
+<td>名称前是否带 loading 图标</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>form-type</td>
+<td>String</td>
+<td></td>
+<td>用于 <code>&lt;form/&gt;</code> 组件，点击分别会触发 <code>&lt;form/&gt;</code> 组件的 submit/reset 事件</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>size 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>default</td>
+<td></td>
+</tr>
+<tr>
+<td>mini</td>
+</tr>
+</tbody>
+</table>
+<p><strong>type 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>primary</td>
+<td></td>
+</tr>
+<tr>
+<td>default</td>
+<td></td>
+</tr>
+<tr>
+<td>warn</td>
+</tr>
+</tbody>
+</table>
+<p><strong>form-type 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>submit</td>
+<td>提交表单</td>
+</tr>
+<tr>
+<td>reset</td>
+<td>重置表单</td>
+</tr>
+</tbody>
+</table>
+<h2 id="audio"><a href="#audio" class="headerlink" title="audio"></a>audio</h2><p>音频。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>String</td>
+<td></td>
+<td>audio 组件的唯一标识符</td>
+</tr>
+<tr>
+<td>src</td>
+<td>String</td>
+<td></td>
+<td>要播放音频的资源地址</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否循环播放</td>
+</tr>
+<tr>
+<td>controls</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否显示默认控件</td>
+</tr>
+<tr>
+<td>poster</td>
+<td>String</td>
+<td></td>
+<td>默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>未知音频</td>
+<td>默认控件上的音频名字，如果 controls 属性值为 false 则设置 name 无效</td>
+</tr>
+<tr>
+<td>author</td>
+<td>String</td>
+<td>未知作者</td>
+<td>默认控件上的作者名字，如果 controls 属性值为 false 则设置 author 无效</td>
+</tr>
+<tr>
+<td>binderror</td>
+<td>EventHandle</td>
+<td></td>
+<td>当发生错误时触发 error 事件，detail = {errMsg: MediaError.code}</td>
+</tr>
+<tr>
+<td>bindplay</td>
+<td>EventHandle</td>
+<td></td>
+<td>当开始/继续播放时触发play事件</td>
+</tr>
+<tr>
+<td>bindpause</td>
+<td>EventHandle</td>
+<td></td>
+<td>当暂停播放时触发 pause 事件</td>
+</tr>
+<tr>
+<td>bindtimeupdate</td>
+<td>EventHandle</td>
+<td></td>
+<td>当播放进度改变时触发 timeupdate 事件，detail = {currentTime, duration}</td>
+</tr>
+<tr>
+<td>bindended</td>
+<td>EventHandle</td>
+<td></td>
+<td>当播放到末尾时触发 ended 事件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>MediaError.code</strong></p>
+<table>
+<thead>
+<tr>
+<th>返回错误码</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MEDIA_ERR_ABORTED</td>
+<td>获取资源被用户禁止</td>
+</tr>
+<tr>
+<td>MEDIA_ERR_NETWORD</td>
+<td>网络错误</td>
+</tr>
+<tr>
+<td>MEDIA_ERR_DECODE</td>
+<td>解码错误</td>
+</tr>
+<tr>
+<td>MEDIA_ERR_SRC_NOT_SUPPOERTED</td>
+<td>不合适资源</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;!-- audio.wxml --&gt;</span><br><span class="line">&lt;audio poster=&quot;&#123;&#123;poster&#125;&#125;&quot; name=&quot;&#123;&#123;name&#125;&#125;&quot; author=&quot;&#123;&#123;author&#125;&#125;&quot; src=&quot;&#123;&#123;src&#125;&#125;&quot; id=&quot;myAudio&quot; controls loop&gt;&lt;/audio&gt;</span><br><span class="line"></span><br><span class="line">&lt;button type=&quot;primary&quot; bindtap=&quot;audioPlay&quot;&gt;播放&lt;/button&gt;</span><br><span class="line">&lt;button type=&quot;primary&quot; bindtap=&quot;audioPause&quot;&gt;暂停&lt;/button&gt;</span><br><span class="line">&lt;button type=&quot;primary&quot; bindtap=&quot;audio14&quot;&gt;设置当前播放时间为14秒&lt;/button&gt;</span><br><span class="line">&lt;button type=&quot;primary&quot; bindtap=&quot;audioStart&quot;&gt;回到开头&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">// audio.js</span><br><span class="line">Page(&#123;</span><br><span class="line">  onReady: function (e) &#123;</span><br><span class="line">    // 使用 wx.createAudioContext 获取 audio 上下文 context</span><br><span class="line">    this.audioCtx = wx.createAudioContext(&apos;myAudio&apos;)</span><br><span class="line">  &#125;,</span><br><span class="line">  data: &#123;</span><br><span class="line">    poster: &apos;http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000&apos;,</span><br><span class="line">    name: &apos;此时此刻&apos;,</span><br><span class="line">    author: &apos;许巍&apos;,</span><br><span class="line">    src: &apos;http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&amp;uin=346897220&amp;vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&amp;fromtag=46&apos;,</span><br><span class="line">  &#125;,</span><br><span class="line">  audioPlay: function () &#123;</span><br><span class="line">    this.audioCtx.play()</span><br><span class="line">  &#125;,</span><br><span class="line">  audioPause: function () &#123;</span><br><span class="line">    this.audioCtx.pause()</span><br><span class="line">  &#125;,</span><br><span class="line">  audio14: function () &#123;</span><br><span class="line">    this.audioCtx.seek(14)</span><br><span class="line">  &#125;,</span><br><span class="line">  audioStart: function () &#123;</span><br><span class="line">    this.audioCtx.seek(0)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="image"><a href="#image" class="headerlink" title="image"></a>image</h2><p>图片。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>src</td>
+<td>String</td>
+<td></td>
+<td>图片资源地址</td>
+<td></td>
+</tr>
+<tr>
+<td>mode</td>
+<td>String</td>
+<td>‘scaleToFill’</td>
+<td>图片裁剪、缩放的模式</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注：image组件默认宽度300px、高度225px</strong></p>
+<p><strong>mode 有效值：</strong></p>
+<p>mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>缩放</td>
+<td>scaleToFill</td>
+<td>不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素</td>
+</tr>
+<tr>
+<td>缩放</td>
+<td>aspectFit</td>
+<td>保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整的将图片显示出来。</td>
+</tr>
+<tr>
+<td>缩放</td>
+<td>aspectFill</td>
+<td>保持纵横比缩放图片，只保证图片的短边能完全显示出来。也就是说，图片通常只在水平或垂直方向是完整的，另一个方向将会发生截取。</td>
+</tr>
+<tr>
+<td>缩放</td>
+<td>widthFix</td>
+<td>宽度不变，高度自动变化，保持原图宽高比不变</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>top</td>
+<td>不缩放图片，只显示图片的顶部区域</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>bottom</td>
+<td>不缩放图片，只显示图片的底部区域</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>center</td>
+<td>不缩放图片，只显示图片的中间区域</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>left</td>
+<td>不缩放图片，只显示图片的左边区域</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>right</td>
+<td>不缩放图片，只显示图片的右边区域</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>top left</td>
+<td>不缩放图片，只显示图片的左上边区域</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>top right</td>
+<td>不缩放图片，只显示图片的右上边区域</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>bottom left</td>
+<td>不缩放图片，只显示图片的左下边区域</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>bottom right</td>
+<td>不缩放图片，只显示图片的右下边区域</td>
+</tr>
+</tbody>
+</table>
+<p>##video</p>
+<p>视频。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>src</td>
+<td>String</td>
+<td></td>
+<td>要播放视频的资源地址</td>
+<td></td>
+</tr>
+<tr>
+<td>initial-time</td>
+<td>Number</td>
+<td></td>
+<td>指定视频初始播放位置</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.6.0</a></td>
+</tr>
+<tr>
+<td>duration</td>
+<td>Number</td>
+<td></td>
+<td>指定视频时长</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
+</tr>
+<tr>
+<td>controls</td>
+<td>Boolean</td>
+<td>true</td>
+<td>是否显示默认播放控件（播放/暂停按钮、播放进度、时间）</td>
+<td></td>
+</tr>
+<tr>
+<td>danmu-list</td>
+<td>Object Array</td>
+<td></td>
+<td>弹幕列表</td>
+<td></td>
+</tr>
+<tr>
+<td>danmu-btn</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否显示弹幕按钮，只在初始化时有效，不能动态变更</td>
+<td></td>
+</tr>
+<tr>
+<td>enable-danmu</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否展示弹幕，只在初始化时有效，不能动态变更</td>
+<td></td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否自动播放</td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否循环播放</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
+</tr>
+<tr>
+<td>muted</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否静音播放</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
+</tr>
+<tr>
+<td>page-gesture</td>
+<td>Boolean</td>
+<td>false</td>
+<td>在非全屏模式下，是否开启亮度与音量调节手势</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.6.0</a></td>
+</tr>
+<tr>
+<td>bindplay</td>
+<td>EventHandle</td>
+<td></td>
+<td>当开始/继续播放时触发play事件</td>
+<td></td>
+</tr>
+<tr>
+<td>bindpause</td>
+<td>EventHandle</td>
+<td></td>
+<td>当暂停播放时触发 pause 事件</td>
+<td></td>
+</tr>
+<tr>
+<td>bindended</td>
+<td>EventHandle</td>
+<td></td>
+<td>当播放到末尾时触发 ended 事件</td>
+<td></td>
+</tr>
+<tr>
+<td>bindtimeupdate</td>
+<td>EventHandle</td>
+<td></td>
+<td>播放进度变化时触发，event.detail = {currentTime: ‘当前播放时间’} 。触发频率应该在 250ms 一次</td>
+<td></td>
+</tr>
+<tr>
+<td>bindfullscreenchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>当视频进入和退出全屏是触发，event.detail = {fullScreen: ‘当前全屏状态’}</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
+</tr>
+<tr>
+<td>objectFit</td>
+<td>String</td>
+<td>contain</td>
+<td>当视频大小与 video 容器大小不一致时，视频的表现形式。contain：包含，fill：填充，cover：覆盖</td>
+<td></td>
+</tr>
+<tr>
+<td>poster</td>
+<td>String</td>
+<td></td>
+<td>默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效</td>
+</tr>
+</tbody>
+</table>
+<p>video标签认宽度300px、高度225px，设置宽高需要通过wxss设置width和height。</p>
+<p><strong>示例代码：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;view class=&quot;section tc&quot;&gt;</span><br><span class="line">  &lt;video src=&quot;&#123;&#123;src&#125;&#125;&quot;   controls &gt;&lt;/video&gt;</span><br><span class="line">  &lt;view class=&quot;btn-area&quot;&gt;</span><br><span class="line">    &lt;button bindtap=&quot;bindButtonTap&quot;&gt;获取视频&lt;/button&gt;</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line"></span><br><span class="line">&lt;view class=&quot;section tc&quot;&gt;</span><br><span class="line">  &lt;video id=&quot;myVideo&quot; src=&quot;http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&amp;bizid=1023&amp;hy=SH&amp;fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400&quot; danmu-list=&quot;&#123;&#123;danmuList&#125;&#125;&quot; enable-danmu danmu-btn controls&gt;&lt;/video&gt;</span><br><span class="line">  &lt;view class=&quot;btn-area&quot;&gt;</span><br><span class="line">    &lt;button bindtap=&quot;bindButtonTap&quot;&gt;获取视频&lt;/button&gt;</span><br><span class="line">    &lt;input bindblur=&quot;bindInputBlur&quot;/&gt;</span><br><span class="line">    &lt;button bindtap=&quot;bindSendDanmu&quot;&gt;发送弹幕&lt;/button&gt;</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">function getRandomColor () &#123;</span><br><span class="line">  let rgb = []</span><br><span class="line">  for (let i = 0 ; i &lt; 3; ++i)&#123;</span><br><span class="line">    let color = Math.floor(Math.random() * 256).toString(16)</span><br><span class="line">    color = color.length == 1 ? &apos;0&apos; + color : color</span><br><span class="line">    rgb.push(color)</span><br><span class="line">  &#125;</span><br><span class="line">  return &apos;#&apos; + rgb.join(&apos;&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Page(&#123;</span><br><span class="line">  onReady: function (res) &#123;</span><br><span class="line">    this.videoContext = wx.createVideoContext(&apos;myVideo&apos;)</span><br><span class="line">  &#125;,</span><br><span class="line">  inputValue: &apos;&apos;,</span><br><span class="line">    data: &#123;</span><br><span class="line">        src: &apos;&apos;,</span><br><span class="line">    danmuList: [</span><br><span class="line">      &#123;</span><br><span class="line">        text: &apos;第 1s 出现的弹幕&apos;,</span><br><span class="line">        color: &apos;#ff0000&apos;,</span><br><span class="line">        time: 1</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        text: &apos;第 3s 出现的弹幕&apos;,</span><br><span class="line">        color: &apos;#ff00ff&apos;,</span><br><span class="line">        time: 3</span><br><span class="line">    &#125;]</span><br><span class="line">    &#125;,</span><br><span class="line">  bindInputBlur: function(e) &#123;</span><br><span class="line">    this.inputValue = e.detail.value</span><br><span class="line">  &#125;,</span><br><span class="line">  bindButtonTap: function() &#123;</span><br><span class="line">    var that = this</span><br><span class="line">    wx.chooseVideo(&#123;</span><br><span class="line">      sourceType: [&apos;album&apos;, &apos;camera&apos;],</span><br><span class="line">      maxDuration: 60,</span><br><span class="line">      camera: [&apos;front&apos;,&apos;back&apos;],</span><br><span class="line">      success: function(res) &#123;</span><br><span class="line">        that.setData(&#123;</span><br><span class="line">          src: res.tempFilePath</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  bindSendDanmu: function () &#123;</span><br><span class="line">    this.videoContext.sendDanmu(&#123;</span><br><span class="line">      text: this.inputValue,</span><br><span class="line">      color: getRandomColor()</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="swiper"><a href="#swiper" class="headerlink" title="swiper"></a>swiper</h2><p>滑块视图容器。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indicator-dots</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否显示面板指示点</td>
+<td></td>
+</tr>
+<tr>
+<td>indicator-color</td>
+<td>Color</td>
+<td>rgba(0, 0, 0, .3)</td>
+<td>指示点颜色</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
+</tr>
+<tr>
+<td>indicator-active-color</td>
+<td>Color</td>
+<td>#000000</td>
+<td>当前选中的指示点颜色</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否自动切换</td>
+<td></td>
+</tr>
+<tr>
+<td>current</td>
+<td>Number</td>
+<td>0</td>
+<td>当前所在页面的 index</td>
+<td></td>
+</tr>
+<tr>
+<td>interval</td>
+<td>Number</td>
+<td>5000</td>
+<td>自动切换时间间隔</td>
+<td></td>
+</tr>
+<tr>
+<td>duration</td>
+<td>Number</td>
+<td>500</td>
+<td>滑动动画时长</td>
+<td></td>
+</tr>
+<tr>
+<td>circular</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否采用衔接滑动</td>
+<td></td>
+</tr>
+<tr>
+<td>vertical</td>
+<td>Boolean</td>
+<td>false</td>
+<td>滑动方向是否为纵向</td>
+<td></td>
+</tr>
+<tr>
+<td>bindchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>current 改变时会触发 change 事件，event.detail = {current: current, source: source}</td>
+</tr>
+</tbody>
+</table>
+<p>在<code>swiper</code>中只可放置<code>&lt;swiper-item/&gt;</code>组件，否则会导致未定义的行为。</p>
+<h4 id="swiper-item"><a href="#swiper-item" class="headerlink" title="swiper-item"></a>swiper-item</h4><p>仅可放置在<code>&lt;swiper/&gt;</code>组件中，宽高自动设置为100%。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;swiper indicator-dots=&quot;&#123;&#123;indicatorDots&#125;&#125;&quot;</span><br><span class="line">  autoplay=&quot;&#123;&#123;autoplay&#125;&#125;&quot; interval=&quot;&#123;&#123;interval&#125;&#125;&quot; duration=&quot;&#123;&#123;duration&#125;&#125;&quot;&gt;</span><br><span class="line">  &lt;block wx:for=&quot;&#123;&#123;imgUrls&#125;&#125;&quot;&gt;</span><br><span class="line">    &lt;swiper-item&gt;</span><br><span class="line">      &lt;image src=&quot;&#123;&#123;item&#125;&#125;&quot; class=&quot;slide-image&quot; width=&quot;355&quot; height=&quot;150&quot;/&gt;</span><br><span class="line">    &lt;/swiper-item&gt;</span><br><span class="line">  &lt;/block&gt;</span><br><span class="line">&lt;/swiper&gt;</span><br><span class="line">&lt;button bindtap=&quot;changeIndicatorDots&quot;&gt; indicator-dots &lt;/button&gt;</span><br><span class="line">&lt;button bindtap=&quot;changeAutoplay&quot;&gt; autoplay &lt;/button&gt;</span><br><span class="line">&lt;slider bindchange=&quot;intervalChange&quot; show-value min=&quot;500&quot; max=&quot;2000&quot;/&gt; interval</span><br><span class="line">&lt;slider bindchange=&quot;durationChange&quot; show-value min=&quot;1000&quot; max=&quot;10000&quot;/&gt; duration</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">Page(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    imgUrls: [</span><br><span class="line">      &apos;http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg&apos;,</span><br><span class="line">      &apos;http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg&apos;,</span><br><span class="line">      &apos;http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg&apos;</span><br><span class="line">    ],</span><br><span class="line">    indicatorDots: false,</span><br><span class="line">    autoplay: false,</span><br><span class="line">    interval: 5000,</span><br><span class="line">    duration: 1000</span><br><span class="line">  &#125;,</span><br><span class="line">  changeIndicatorDots: function(e) &#123;</span><br><span class="line">    this.setData(&#123;</span><br><span class="line">      indicatorDots: !this.data.indicatorDots</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  changeAutoplay: function(e) &#123;</span><br><span class="line">    this.setData(&#123;</span><br><span class="line">      autoplay: !this.data.autoplay</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  intervalChange: function(e) &#123;</span><br><span class="line">    this.setData(&#123;</span><br><span class="line">      interval: e.detail.value</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  durationChange: function(e) &#123;</span><br><span class="line">    this.setData(&#123;</span><br><span class="line">      duration: e.detail.value</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序01——快速创建微信小程序项目模板/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/14/微信小程序04——小程序常用内置组件/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序02——模板文档介绍/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序04——小程序常用内置组件/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2017/12/14/微信小程序02——模板文档介绍/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/12/14/微信小程序05——路由和网络请求/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序05——路由和网络请求/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序06——模块化/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -293,8 +1093,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
