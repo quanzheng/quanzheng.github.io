@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 小全同学</title>
+  <title>微信小程序05——路由和网络请求 | 小全同学</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="小全同学">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="Created By 小全同学  页面导航wx.navigateTo(object)保留当前页面，跳转到应用内的某个页面，使用wx.navigateBack可以返回到原页面。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信小程序05——路由和网络请求">
+<meta property="og:url" content="http://yoursite.com/2017/12/14/微信小程序/微信小程序05——路由和网络请求/index.html">
 <meta property="og:site_name" content="小全同学">
+<meta property="og:description" content="Created By 小全同学  页面导航wx.navigateTo(object)保留当前页面，跳转到应用内的某个页面，使用wx.navigateBack可以返回到原页面。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-12T10:29:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小全同学">
+<meta name="twitter:title" content="微信小程序05——路由和网络请求">
+<meta name="twitter:description" content="Created By 小全同学  页面导航wx.navigateTo(object)保留当前页面，跳转到应用内的某个页面，使用wx.navigateBack可以返回到原页面。">
   
     <link rel="alternative" href="/atom.xml" title="小全同学" type="application/atom+xml">
   
@@ -150,157 +154,501 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-微信小程序/微信小程序05——路由和网络请求" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      微信小程序05——路由和网络请求
+    </h1>
+  
+
+        
+        <a href="/2017/12/14/微信小程序/微信小程序05——路由和网络请求/" class="archive-article-date">
+  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>Created By 小全同学</p>
+</blockquote>
+<h2 id="页面导航"><a href="#页面导航" class="headerlink" title="页面导航"></a>页面导航</h2><h3 id="wx-navigateTo-object"><a href="#wx-navigateTo-object" class="headerlink" title="wx.navigateTo(object)"></a>wx.navigateTo(object)</h3><p>保留当前页面，跳转到应用内的某个页面，使用<code>wx.navigateBack</code>可以返回到原页面。<br><a id="more"></a></p>
+<p><strong>OBJECT 参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>是</td>
+<td>需要跳转的应用内非 tabBar 的页面的路径 , 路径后可以带参数。参数与路径之间使用<code>?</code>分隔，参数键与参数值用<code>=</code>相连，不同参数用<code>&amp;</code>分隔；如 ‘path?key=value&amp;key2=value2’</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用成功的回调函数</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意：为了不让用户在使用小程序时造成困扰，我们规定页面路径只能是五层，请尽量避免多层级的交互方式。</strong></p>
+<h3 id="wx-redirectTo-object"><a href="#wx-redirectTo-object" class="headerlink" title="wx.redirectTo(object)"></a>wx.redirectTo(object)</h3><p>关闭当前页面，跳转到应用内的某个页面。</p>
+<p><strong>OBJECT 参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>是</td>
+<td>需要跳转的应用内非 tabBar 的页面的路径，路径后可以带参数。参数与路径之间使用<code>?</code>分隔，参数键与参数值用<code>=</code>相连，不同参数用<code>&amp;</code>分隔；如 ‘path?key=value&amp;key2=value2’</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用成功的回调函数</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wx-reLaunch-object"><a href="#wx-reLaunch-object" class="headerlink" title="wx.reLaunch(object)"></a>wx.reLaunch(object)</h3><p>关闭所有页面，打开到应用内的某个页面。</p>
+<p><strong>OBJECT 参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>是</td>
+<td>需要跳转的应用内页面路径 , 路径后可以带参数。参数与路径之间使用<code>?</code>分隔，参数键与参数值用<code>=</code>相连，不同参数用<code>&amp;</code>分隔；如 ‘path?key=value&amp;key2=value2’，如果跳转的页面路径是 tabBar 页面则不能带参数</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用成功的回调函数</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wx-switchTab-object"><a href="#wx-switchTab-object" class="headerlink" title="wx.switchTab(object)"></a>wx.switchTab(object)</h3><p>跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面</p>
+<p><strong>OBJECT 参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>是</td>
+<td>需要跳转的 tabBar 页面的路径（需在 app.json 的 <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html#tabbar" target="_blank" rel="noopener">tabBar</a> 字段定义的页面），路径后不能带参数</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用成功的回调函数</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wx-navigateBack-object"><a href="#wx-navigateBack-object" class="headerlink" title="wx.navigateBack(object)"></a>wx.navigateBack(object)</h3><p>关闭当前页面，返回上一页面或多级页面。可通过 <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html#getCurrentPages(" target="_blank" rel="noopener"><code>getCurrentPages()</code></a>) 获取当前的页面栈，决定需要返回几层</p>
+<p><strong>OBJECT 参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>delta</td>
+<td>Number</td>
+<td>1</td>
+<td>返回的页面数，如果 delta 大于现有页面数，则返回到首页。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>wx.navigateTo 和 wx.redirectTo 不允许跳转到 tabbar 页面，只能用 wx.switchTab 跳转到 tabbar 页面</li>
+</ul>
+<h2 id="https请求"><a href="#https请求" class="headerlink" title="https请求"></a>https请求</h2><p>在小程序中使用网络相关的 API 时，需要注意下列问题：</p>
+<h3 id="服务器域名配置"><a href="#服务器域名配置" class="headerlink" title="服务器域名配置"></a>服务器域名配置</h3><p>每个微信小程序需要事先设置一个通讯域名，小程序可以跟指定的域名与进行网络通信。包括普通 HTTPS 请求（<code>request</code>）、上传文件（<code>uploadFile</code>）、下载文件（<code>downloadFile</code>) 和 WebSocket 通信（<code>connectSocket</code>）</p>
+<p><strong>服务器域名配置流程</strong></p>
+<p>服务器域名请在 <code>小程序后台-设置-开发设置-服务器域名</code> 中进行配置，配置时需要注意：</p>
+<ul>
+<li>域名只支持 <code>https</code> (<code>request</code>、<code>uploadFile</code>、<code>downloadFile</code>) 和 <code>wss</code> (<code>connectSocket</code>) 协议；</li>
+<li>域名不能使用 IP 地址或 localhost，且不能带端口号；</li>
+<li>域名必须经过 ICP 备案；</li>
+<li><strong>出于安全考虑，api.weixin.qq.com 不能被配置为服务器域名，相关API也不能在小程序内调用。</strong>开发者应将 appsecret 保存到后台服务器中，通过服务器使用 appsecret 获取 accesstoken，并调用相关 API。</li>
+</ul>
+<h3 id="wx-request-object"><a href="#wx-request-object" class="headerlink" title="wx.request(object)"></a>wx.request(object)</h3><p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必填</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>是</td>
+<td></td>
+<td>开发者服务器接口地址</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Object/String</td>
+<td>否</td>
+<td></td>
+<td>请求的参数</td>
+</tr>
+<tr>
+<td>header</td>
+<td>Object</td>
+<td>否</td>
+<td></td>
+<td>设置请求的 header，header 中不能设置 Referer。</td>
+</tr>
+<tr>
+<td>method</td>
+<td>String</td>
+<td>否</td>
+<td>GET</td>
+<td>（需大写）有效值：OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT</td>
+</tr>
+<tr>
+<td>dataType</td>
+<td>String</td>
+<td>否</td>
+<td>json</td>
+<td>如果设为json，会尝试对返回的数据做一次 JSON.parse</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>否</td>
+<td></td>
+<td>收到开发者服务成功返回的回调函数</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td></td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td></td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>Object/String</td>
+<td>开发者服务器返回的数据</td>
+<td></td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>Number</td>
+<td>开发者服务器返回的 HTTP 状态码</td>
+<td></td>
+</tr>
+<tr>
+<td>header</td>
+<td>Object</td>
+<td>开发者服务器返回的 HTTP Response Header</td>
+<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.2.0</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>data 数据说明：</strong></p>
+<p>最终发送给服务器的数据是 String 类型，如果传入的 data 不是 String 类型，会被转换成 String 。转换规则如下：</p>
+<ul>
+<li>对于 <code>header[&#39;content-type&#39;]</code> 为 <code>application/json</code> 的数据，会对数据进行 JSON 序列化</li>
+<li>对于 <code>header[&#39;content-type&#39;]</code> 为 <code>application/x-www-form-urlencoded</code> 的数据，会将数据转换成 query string （encodeURIComponent(k)=encodeURIComponent(v)&amp;encodeURIComponent(k)=encodeURIComponent(v)…）</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/">微信小程序01——快速创建微信小程序项目模板</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/14/微信小程序/微信小程序05——路由和网络请求/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2017/12/14/微信小程序/微信小程序02——模板文档介绍/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          微信小程序02——模板文档介绍
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/12/14/微信小程序/微信小程序06——模块化/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">微信小程序06——模块化</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/">微信小程序04——小程序常用内置组件</a>
-    </h1>
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="微信小程序/微信小程序05——路由和网络请求" data-title="微信小程序05——路由和网络请求" data-url="http://yoursite.com/2017/12/14/微信小程序/微信小程序05——路由和网络请求/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://yoursite.com/2017/12/14/微信小程序/微信小程序05——路由和网络请求/", 
+    sourceId: "微信小程序/微信小程序05——路由和网络请求",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序02——模板文档介绍/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序02——模板文档介绍/">微信小程序02——模板文档介绍</a>
-    </h1>
+  <div id="SOHUCS" sid="微信小程序/微信小程序05——路由和网络请求" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "true",
+        conf: "true"
+    });
+</script>
+</script>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序05——路由和网络请求/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序05——路由和网络请求/">微信小程序05——路由和网络请求</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序06——模块化/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序06——模块化/">微信小程序06——模块化</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -323,8 +671,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
