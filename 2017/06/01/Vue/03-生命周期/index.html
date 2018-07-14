@@ -6,19 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>02-Vue实例 | 小全同学</title>
+  <title>03-生命周期 | 小全同学</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Vue实例Created By 小全同学 简介任何Vue程序都需要至少一个Vue实例对象，然后在内部设置各种属性和方法，以及生命周期的控制 创建Vue示例123456javascriptlet vm = new Vue(&amp;#123;    el: &apos;#app&apos;,    data: &amp;#123;&amp;#125;,    methods: &amp;#123;&amp;#125;&amp;#125;) el 对应的标签根节点放置">
+  <meta name="description" content="生命周期Created By 小全同学 Vue实例运行的整个流程 http://cn.vuejs.org/v2/guide/instance.html#search-query-sidebar  beforeCreate创建之前 created创建之后 1234javascriptcreated () &amp;#123; // 发起网络请求    console.log(&apos;created&apos;);&amp;#125">
 <meta property="og:type" content="article">
-<meta property="og:title" content="02-Vue实例">
-<meta property="og:url" content="http://yoursite.com/2017/06/01/Vue/02-Vue实例/index.html">
+<meta property="og:title" content="03-生命周期">
+<meta property="og:url" content="http://yoursite.com/2017/06/01/Vue/03-生命周期/index.html">
 <meta property="og:site_name" content="小全同学">
-<meta property="og:description" content="Vue实例Created By 小全同学 简介任何Vue程序都需要至少一个Vue实例对象，然后在内部设置各种属性和方法，以及生命周期的控制 创建Vue示例123456javascriptlet vm = new Vue(&amp;#123;    el: &apos;#app&apos;,    data: &amp;#123;&amp;#125;,    methods: &amp;#123;&amp;#125;&amp;#125;) el 对应的标签根节点放置">
+<meta property="og:description" content="生命周期Created By 小全同学 Vue实例运行的整个流程 http://cn.vuejs.org/v2/guide/instance.html#search-query-sidebar  beforeCreate创建之前 created创建之后 1234javascriptcreated () &amp;#123; // 发起网络请求    console.log(&apos;created&apos;);&amp;#125">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-14T15:43:06.000Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fg3t7dou4xj30xc25sdko.jpg">
+<meta property="og:updated_time" content="2018-07-14T15:43:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="02-Vue实例">
-<meta name="twitter:description" content="Vue实例Created By 小全同学 简介任何Vue程序都需要至少一个Vue实例对象，然后在内部设置各种属性和方法，以及生命周期的控制 创建Vue示例123456javascriptlet vm = new Vue(&amp;#123;    el: &apos;#app&apos;,    data: &amp;#123;&amp;#125;,    methods: &amp;#123;&amp;#125;&amp;#125;) el 对应的标签根节点放置">
+<meta name="twitter:title" content="03-生命周期">
+<meta name="twitter:description" content="生命周期Created By 小全同学 Vue实例运行的整个流程 http://cn.vuejs.org/v2/guide/instance.html#search-query-sidebar  beforeCreate创建之前 created创建之后 1234javascriptcreated () &amp;#123; // 发起网络请求    console.log(&apos;created&apos;);&amp;#125">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fg3t7dou4xj30xc25sdko.jpg">
   
     <link rel="alternative" href="/atom.xml" title="小全同学" type="application/atom+xml">
   
@@ -148,43 +150,42 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Vue/02-Vue实例" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Vue/03-生命周期" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      02-Vue实例
+      03-生命周期
     </h1>
   
 
         
-        <a href="/2017/06/01/Vue/02-Vue实例/" class="archive-article-date">
-  	<time datetime="2017-06-01T01:30:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-01</time>
+        <a href="/2017/06/01/Vue/03-生命周期/" class="archive-article-date">
+  	<time datetime="2017-06-01T01:31:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Vue实例"><a href="#Vue实例" class="headerlink" title="Vue实例"></a>Vue实例</h2><p><strong>Created By 小全同学</strong></p>
-<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>任何Vue程序都需要至少一个Vue实例对象，然后在内部设置各种属性和方法，以及生命周期的控制</p>
-<h4 id="创建Vue示例"><a href="#创建Vue示例" class="headerlink" title="创建Vue示例"></a>创建Vue示例</h4><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="keyword">let</span> <span class="keyword">vm</span> = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    <span class="keyword">e</span><span class="variable">l:</span> <span class="string">'#app'</span>,</span><br><span class="line">    dat<span class="variable">a:</span> &#123;&#125;,</span><br><span class="line">    method<span class="variable">s:</span> &#123;&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h4 id="el-对应的标签根节点"><a href="#el-对应的标签根节点" class="headerlink" title="el 对应的标签根节点"></a>el 对应的标签根节点</h4><p>放置一个选择器，不一定是id，可以是class或其它</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">javascript</span></span><br><span class="line"><span class="selector-tag">new</span> <span class="selector-tag">Vue</span>(&#123;</span><br><span class="line">    <span class="attribute">el</span>: <span class="string">'.app'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h4 id="data-实例对应的数据"><a href="#data-实例对应的数据" class="headerlink" title="data 实例对应的数据"></a>data 实例对应的数据</h4><p>注意：此处的data是数据对象</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">javascript</span></span><br><span class="line"><span class="selector-tag">data</span>: &#123;</span><br><span class="line">  </span><br><span class="line">    <span class="attribute">message</span>: <span class="string">'abc'</span>，</span><br><span class="line">    people: [</span><br><span class="line">        &#123; name: <span class="string">'xiaoming'</span> &#125;,</span><br><span class="line">        &#123; <span class="attribute">name</span>: <span class="string">'xiaohong'</span> &#125;,</span><br><span class="line">        &#123; <span class="attribute">name</span>: <span class="string">'xiaoli'</span> &#125;</span><br><span class="line">    ], </span><br><span class="line">    <span class="selector-tag">person</span>: &#123;</span><br><span class="line">        <span class="attribute">name</span>: <span class="string">'xiaohong'</span>,</span><br><span class="line">        age: <span class="number">18</span>,</span><br><span class="line">        gender: <span class="string">'M'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="methods-实例对应的方法"><a href="#methods-实例对应的方法" class="headerlink" title="methods 实例对应的方法"></a>methods 实例对应的方法</h4><p>方法的写法不同，内部的this便不同</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">methods: &#123;</span><br><span class="line">    test1: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">// vm</span></span><br><span class="line">    &#125;,</span><br><span class="line">    test2 () &#123; <span class="comment">// 建议写法</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">// vm </span></span><br><span class="line">    &#125;, </span><br><span class="line">    test3:  <span class="function">(<span class="params">a,b</span>) =&gt;</span> &#123; </span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">// window </span></span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="computed-计算属性"><a href="#computed-计算属性" class="headerlink" title="computed 计算属性"></a>computed 计算属性</h4><p>语法上看起来对应的是函数，其实代表的是<code>函数的返回值</code></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="keyword">let</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">'#app'</span>,</span><br><span class="line">    data: &#123; <span class="attr">a</span>: <span class="number">10</span> &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        doubleAFunc () &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'doubleAFunc'</span>); <span class="comment">// 使用一次，执行一次</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.a * <span class="number">2</span>;</span><br><span class="line">        &#125;,</span><br><span class="line">        change () &#123;</span><br><span class="line">            <span class="keyword">this</span>.a += <span class="number">10</span>; <span class="comment">// 如果值发生了改变，则方法执行N次，计算属性执行一次</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    computed: &#123; <span class="comment">// 计算属性</span></span><br><span class="line">        doubleA: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'doubleA'</span>); <span class="comment">// 无论使用多少次，都只是执行一次</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.a * <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><span class="template-variable">&#123;&#123; doubleA &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><span class="template-variable">&#123;&#123; doubleAFunc() &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><span class="template-variable">&#123;&#123; doubleA &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><span class="template-variable">&#123;&#123; doubleAFunc() &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><span class="template-variable">&#123;&#123; doubleA &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><span class="template-variable">&#123;&#123; doubleAFunc() &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="watch-观察属性值"><a href="#watch-观察属性值" class="headerlink" title="watch 观察属性值"></a>watch 观察属性值</h4><p>当值发生改变，第一时间获取新值和旧值</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">watch: <span class="type"></span>&#123;</span><br><span class="line">    a (<span class="keyword">new</span><span class="type">Value</span>, oldValue) &#123;</span><br><span class="line">        console.log(<span class="string">'a changed'</span>);</span><br><span class="line">        console.log(<span class="keyword">new</span><span class="type">Value</span>, oldValue);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="filters-过滤器"><a href="#filters-过滤器" class="headerlink" title="filters 过滤器"></a>filters 过滤器</h4><p>筛选指定的数据</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>&#123;&#123; msg | upper &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>&#123;&#123; people | students(18) &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">filters: &#123;</span><br><span class="line">    upper (<span class="built_in">str</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">str</span>.toUpperCase();</span><br><span class="line">    &#125;, </span><br><span class="line">    students (people, age) &#123; <span class="comment">// 携带了参数</span></span><br><span class="line">        <span class="keyword">const</span> arr = [];</span><br><span class="line">        people.<span class="built_in">map</span>(item =&gt; &#123;</span><br><span class="line">            item.age &gt;= age &amp;&amp; arr.push(item);</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p><strong>Created By 小全同学</strong></p>
+<p>Vue实例运行的整个流程</p>
+<p><a href="http://cn.vuejs.org/v2/guide/instance.html#search-query-sidebar" target="_blank" rel="noopener">http://cn.vuejs.org/v2/guide/instance.html#search-query-sidebar</a></p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fg3t7dou4xj30xc25sdko.jpg" alt=""></p>
+<h4 id="beforeCreate"><a href="#beforeCreate" class="headerlink" title="beforeCreate"></a>beforeCreate</h4><p>创建之前</p>
+<h4 id="created"><a href="#created" class="headerlink" title="created"></a>created</h4><p>创建之后</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">javascript</span></span><br><span class="line"><span class="selector-tag">created</span> () &#123; <span class="comment">// 发起网络请求</span></span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'created'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="beforeMount"><a href="#beforeMount" class="headerlink" title="beforeMount"></a>beforeMount</h4><p>渲染完成之前</p>
+<h4 id="mounted"><a href="#mounted" class="headerlink" title="mounted"></a>mounted</h4><p>渲染完成之后</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">javascript</span></span><br><span class="line"><span class="selector-tag">mounted</span> () &#123; <span class="comment">// 页面渲染完成</span></span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'mounted'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="beforeUpdate"><a href="#beforeUpdate" class="headerlink" title="beforeUpdate"></a>beforeUpdate</h4><p>更新之前</p>
+<h4 id="updated"><a href="#updated" class="headerlink" title="updated"></a>updated</h4><p>更新之后</p>
+<h4 id="beforeDestroy"><a href="#beforeDestroy" class="headerlink" title="beforeDestroy"></a>beforeDestroy</h4><p>释放之前</p>
+<h4 id="destroyed"><a href="#destroyed" class="headerlink" title="destroyed"></a>destroyed</h4><p>释放之后</p>
+<p>代码示例：</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">javascript</span></span><br><span class="line"><span class="selector-tag">beforeCreate</span> () &#123;</span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'beforeCreate'</span>);</span><br><span class="line">&#125;,</span><br><span class="line"><span class="selector-tag">created</span> () &#123;</span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'created'</span>);</span><br><span class="line">&#125;,</span><br><span class="line"><span class="selector-tag">beforeMount</span> () &#123;</span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'beforeMount'</span>);</span><br><span class="line">&#125;,</span><br><span class="line"><span class="selector-tag">mounted</span> () &#123;</span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'mounted'</span>);</span><br><span class="line">&#125;,</span><br><span class="line"><span class="selector-tag">beforeUpdate</span> () &#123;</span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'beforeUpdate'</span>);</span><br><span class="line">&#125;,</span><br><span class="line"><span class="selector-tag">updated</span> () &#123;</span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'updated'</span>);</span><br><span class="line">&#125;,</span><br><span class="line"><span class="selector-tag">beforeDestroy</span> () &#123; <span class="comment">// 调用$destroy()方法便会执行</span></span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'beforeDestroy'</span>);</span><br><span class="line">&#125;,</span><br><span class="line"><span class="selector-tag">destroyed</span> () &#123;</span><br><span class="line">    <span class="selector-tag">console</span><span class="selector-class">.log</span>(<span class="string">'destroyed'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
 
@@ -264,7 +265,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/06/01/Vue/02-Vue实例/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/06/01/Vue/03-生命周期/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -278,18 +279,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/06/01/Vue/03-生命周期/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/06/04/Vue/00-Vue基础/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          03-生命周期
+          00-Vue基础
         
       </div>
     </a>
   
   
-    <a href="/2017/06/01/Vue/01-基础指令/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">01-基础指令</div>
+    <a href="/2017/06/01/Vue/02-Vue实例/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">02-Vue实例</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -317,7 +318,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Vue/02-Vue实例" data-title="02-Vue实例" data-url="http://yoursite.com/2017/06/01/Vue/02-Vue实例/"></div>
+	<div class="ds-thread" data-thread-key="Vue/03-生命周期" data-title="03-生命周期" data-url="http://yoursite.com/2017/06/01/Vue/03-生命周期/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -340,8 +341,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2017/06/01/Vue/02-Vue实例/", 
-    sourceId: "Vue/02-Vue实例",
+    url: "http://yoursite.com/2017/06/01/Vue/03-生命周期/", 
+    sourceId: "Vue/03-生命周期",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -350,7 +351,7 @@
   
 
   
-  <div id="SOHUCS" sid="Vue/02-Vue实例" ></div> 
+  <div id="SOHUCS" sid="Vue/03-生命周期" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
