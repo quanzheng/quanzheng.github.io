@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 小全同学</title>
+  <title>小全同学</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="小全同学">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="小全同学">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -146,292 +146,118 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Vue/01-基础指令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/01/Vue/01-基础指令/">01-基础指令</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/01/Vue/01-基础指令/" class="archive-article-date">
+  	<time datetime="2017-06-01T01:25:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-01</time>
+</a>
+        
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h2><p><strong>Created By 小全同学</strong></p>
+<p>在HTML中直接嵌入JavaScript代码，需要使用表达式</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">&#123;&#123; <span class="number">10</span> + <span class="number">20</span> &#125;&#125;</span><br><span class="line">&#123;&#123; Math.random() &gt; <span class="number">0</span>.<span class="number">5</span> &#125;&#125;</span><br><span class="line">&#123;&#123; <span class="string">'hello vue'</span>.toUpperCase() &#125;&#125;</span><br><span class="line">&#123;&#123; <span class="number">0</span> &gt; <span class="number">1</span> ? <span class="string">'true'</span> : <span class="string">'false'</span> &#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>和AngularJS中使用规则一致</p>
+<p>注意：放置的代码，一定要具有返回值</p>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><h4 id="v-text"><a href="#v-text" class="headerlink" title="v-text"></a>v-text</h4><p>绑定内容值</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;h2&gt;&#123;&#123; <span class="selector-tag">a</span> &#125;&#125;&lt;/h2&gt;</span><br><span class="line">&lt;<span class="selector-tag">h2</span> v-text=<span class="string">"a"</span>&gt;&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<p>和AngularJS中ng-bind功能一致</p>
+<h4 id="v-model"><a href="#v-model" class="headerlink" title="v-model"></a>v-model</h4><p>双向绑定</p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-model</span>=<span class="string">"username"</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><span class="template-variable">&#123;&#123; username &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>和AngularJS中ng-model功能一致</p>
+<p>v-model是语法糖，不使用v-model也可实现（v-bind / v-on）</p>
+<p>注意：使用变量username的时候，一定需要在控制器中进行过定义</p>
+<h4 id="v-for"><a href="#v-for" class="headerlink" title="v-for"></a>v-for</h4><p>渲染列表</p>
+<p>关键字使用<code>of</code>或<code>in</code>都可以</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="comment">// 首先在数据中声明</span></span><br><span class="line">let vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line"><span class="symbol">    el:</span> <span class="string">'#app'</span>,</span><br><span class="line"><span class="symbol">    data:</span> &#123;</span><br><span class="line"><span class="symbol">        people:</span> [</span><br><span class="line">            &#123; <span class="string">name:</span> <span class="string">'xiaoming'</span>, <span class="string">age:</span> <span class="number">19</span> &#125;,</span><br><span class="line">            &#123; <span class="string">name:</span> <span class="string">'xiaohong'</span>, <span class="string">age:</span> <span class="number">20</span> &#125;,</span><br><span class="line">            &#123; <span class="string">name:</span> <span class="string">'xiaoli'</span>, <span class="string">age:</span> <span class="number">12</span> &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;!-- 在HTML中的使用 --&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;<span class="selector-tag">li</span> v-<span class="keyword">for</span>=<span class="string">"person in people"</span>&gt;&#123;&#123; person<span class="selector-class">.name</span> + <span class="string">' '</span> + person<span class="selector-class">.age</span> &#125;&#125;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;<span class="selector-tag">li</span> v-<span class="keyword">for</span>=<span class="string">"person of people"</span>&gt;&#123;&#123; person<span class="selector-class">.name</span> + <span class="string">' '</span> + person<span class="selector-class">.age</span> &#125;&#125;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;<span class="selector-tag">li</span> v-<span class="keyword">for</span>=<span class="string">"(person, index) in people"</span>&gt;&#123;&#123; index + <span class="string">' '</span> + person<span class="selector-class">.name</span> + <span class="string">' '</span> + person<span class="selector-class">.age</span> &#125;&#125;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;<span class="selector-tag">li</span> v-<span class="keyword">for</span>=<span class="string">"(person, index) of people"</span>&gt;&#123;&#123; index + <span class="string">' '</span> + person<span class="selector-class">.name</span> + <span class="string">' '</span> + person<span class="selector-class">.age</span> &#125;&#125;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="v-on"><a href="#v-on" class="headerlink" title="v-on"></a>v-on</h4><p>事件绑定</p>
+<p>和AngularJS不同，在Vue中，绑定任何事件都使用<code>v-on</code>这一个指令</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="comment">// 在method中声明方法</span></span><br><span class="line"><span class="keyword">let</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: '<span class="meta">#app',</span></span><br><span class="line">    methods: &#123;</span><br><span class="line">        <span class="keyword">show</span>() &#123;</span><br><span class="line">            console.<span class="built_in">log</span>('<span class="keyword">show</span>');</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line"><span class="comment">&lt;!-- 在HTML中的调用 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">v-on:click</span>=<span class="string">"show()"</span>&gt;</span>Show<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>简写形式</strong>，使用<code>@</code>代替了<code>v-on</code>指令</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">button</span> type=<span class="string">"button"</span> @click=<span class="string">"show()"</span>&gt;Show&lt;/button&gt;</span><br><span class="line">&lt;<span class="selector-tag">h2</span> @mouseover=<span class="string">"show()"</span>&gt;mouseover&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>修饰符</strong></p>
+<p>执行事件的同时，另外去执行其它的任务</p>
+<ul>
+<li><code>stop</code>：调用event.stopPropagation()</li>
+<li><code>prevent</code>：调用event.preventDefault()</li>
+<li><code>enter</code>：调用指定按键上触发的回调</li>
+</ul>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;input <span class="attribute">type</span>=<span class="string">"text"</span> @keyup.<span class="attribute">enter</span>=<span class="string">"show()"</span>&gt;</span><br><span class="line">&lt;input <span class="attribute">type</span>=<span class="string">"text"</span> @keyup.<span class="attribute">13</span>=<span class="string">"show()"</span>&gt;</span><br><span class="line">&lt;a <span class="attribute">href</span>=<span class="string">"http://blog.lidaze.com"</span> @click.<span class="attribute">prevent</span>=<span class="string">"show()"</span>&gt;李大泽&lt;/a&gt;</span><br><span class="line">&lt;div @click.<span class="attribute">stop</span>=<span class="string">"show()"</span>&gt;阻止事件冒泡&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>传递参数</strong></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">h2</span> @click=<span class="string">"show($event)"</span>&gt;<span class="variable">$event</span>参数&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">methods: &#123;</span><br><span class="line">    <span class="keyword">show</span>(e) &#123; <span class="comment">// e代表传递进来的参数</span></span><br><span class="line">        console.<span class="built_in">log</span>(e);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a>v-bind</h4><p>绑定属性</p>
+<figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;img v-<span class="keyword">bind</span>:src=<span class="string">"imgUrl"</span>&gt;</span><br><span class="line">&lt;a v-<span class="keyword">bind</span>:href=<span class="string">"blogUrl"</span>&gt;&#123;&#123; blogName &#125;&#125;&lt;/a&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> v-<span class="keyword">bind</span>:class=<span class="string">"&#123; 'active': flag &#125;"</span>&gt;v-<span class="keyword">bind</span>:class&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> v-<span class="keyword">bind</span>:style=<span class="string">"&#123; fontSize: '50px' &#125;"</span>&gt;v-<span class="keyword">bind</span>:style&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> v-<span class="keyword">bind</span>=<span class="string">"&#123; id: 'div1', title: 'i\'m div' &#125;"</span>&gt;v-<span class="keyword">bind</span>&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>简写形式</strong>，使用<code>:</code>来代替<code>v-bind</code>指令</p>
+<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">:src</span>=<span class="string">"imgUrl"</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">:href</span>=<span class="string">"blogUrl"</span>&gt;</span></span><span class="template-variable">&#123;&#123; blogName &#125;</span><span class="xml">&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"</span></span></span><span class="template-variable">&#123; 'active': flag &#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span>v-bind:class<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:style</span>=<span class="string">"</span></span></span><span class="template-variable">&#123; fontSize: '50px' &#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span>v-bind:style<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="v-if-v-else-if-v-else"><a href="#v-if-v-else-if-v-else" class="headerlink" title="v-if  v-else-if  v-else"></a>v-if  v-else-if  v-else</h4><p>是否渲染</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">div</span> v-<span class="keyword">if</span>=<span class="string">"type === 'A'"</span>&gt;A&lt;/div&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span> v-<span class="keyword">else</span>-<span class="keyword">if</span>=<span class="string">"type === 'B'"</span>&gt;B&lt;/div&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span> v-<span class="keyword">else</span>-<span class="keyword">if</span>=<span class="string">"type === 'C'"</span>&gt;C&lt;/div&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span> v-<span class="keyword">else</span>&gt;Not A/B/C&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a>v-show</h4><p>显示隐藏标签</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">h2</span> v-show=<span class="string">"flag"</span>&gt;v-show&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="v-cloak"><a href="#v-cloak" class="headerlink" title="v-cloak"></a>v-cloak</h4><p>这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">div</span> id=<span class="string">"app"</span> v-cloak&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="v-once"><a href="#v-once" class="headerlink" title="v-once"></a>v-once</h4><p>只渲染元素和组件<strong>一次</strong>。随后的重新渲染,元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">h2</span> @click=<span class="string">"change()"</span> v-once&gt;&#123;&#123; msg &#125;&#125;&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">change () &#123;</span><br><span class="line">    <span class="keyword">this</span>.msg += <span class="string">'ggggggggg'</span>;</span><br><span class="line">    console.log(<span class="keyword">this</span>.msg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序02——模板文档介绍/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序02——模板文档介绍/">微信小程序02——模板文档介绍</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/01/Vue/01-基础指令/">展开全文 >></a>
+        </p>
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/">微信小程序04——小程序常用内置组件</a>
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序06——模块化/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序06——模块化/">微信小程序06——模块化</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序05——路由和网络请求/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序05——路由和网络请求/">微信小程序05——路由和网络请求</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/">微信小程序01——快速创建微信小程序项目模板</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/07/Vue/04-Component/" class="archive-article-date">
-  	<time datetime="2017-06-07T08:36:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/07/Vue/04-Component/">04-Component</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/07/Vue/05-单文件组件/" class="archive-article-date">
-  	<time datetime="2017-06-07T08:35:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/07/Vue/05-单文件组件/">05-单文件组件</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/04/Vue/00-Vue基础/" class="archive-article-date">
-  	<time datetime="2017-06-04T06:33:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/04/Vue/00-Vue基础/">00-Vue基础</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/01/Vue/03-生命周期/" class="archive-article-date">
-  	<time datetime="2017-06-01T01:31:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/01/Vue/03-生命周期/">03-生命周期</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/01/Vue/02-Vue实例/" class="archive-article-date">
-  	<time datetime="2017-06-01T01:30:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/01/Vue/02-Vue实例/">02-Vue实例</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
-  
-
-    
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/page/2/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
     </nav>
   
 
@@ -455,9 +281,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
