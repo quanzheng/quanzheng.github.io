@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>微信小程序04——小程序常用内置组件 | 小全同学</title>
+  <title>01-基础指令 | 小全同学</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Created By 小全同学  [TOC]">
+  <meta name="description" content="表达式Created By 小全同学 在HTML中直接嵌入JavaScript代码，需要使用表达式 12345javascript&amp;#123;&amp;#123; 10 + 20 &amp;#125;&amp;#125;&amp;#123;&amp;#123; Math.random() &amp;gt; 0.5 &amp;#125;&amp;#125;&amp;#123;&amp;#123; &apos;hello vue&apos;.toUpperCase() &amp;#125;&amp;#125;&amp;#1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序04——小程序常用内置组件">
-<meta property="og:url" content="http://yoursite.com/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/index.html">
+<meta property="og:title" content="01-基础指令">
+<meta property="og:url" content="http://yoursite.com/2017/06/01/Vue/01-基础指令/index.html">
 <meta property="og:site_name" content="小全同学">
-<meta property="og:description" content="Created By 小全同学  [TOC]">
+<meta property="og:description" content="表达式Created By 小全同学 在HTML中直接嵌入JavaScript代码，需要使用表达式 12345javascript&amp;#123;&amp;#123; 10 + 20 &amp;#125;&amp;#125;&amp;#123;&amp;#123; Math.random() &amp;gt; 0.5 &amp;#125;&amp;#125;&amp;#123;&amp;#123; &apos;hello vue&apos;.toUpperCase() &amp;#125;&amp;#125;&amp;#1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-12T10:29:06.000Z">
+<meta property="og:updated_time" content="2018-07-14T16:05:33.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="微信小程序04——小程序常用内置组件">
-<meta name="twitter:description" content="Created By 小全同学  [TOC]">
+<meta name="twitter:title" content="01-基础指令">
+<meta name="twitter:description" content="表达式Created By 小全同学 在HTML中直接嵌入JavaScript代码，需要使用表达式 12345javascript&amp;#123;&amp;#123; 10 + 20 &amp;#125;&amp;#125;&amp;#123;&amp;#123; Math.random() &amp;gt; 0.5 &amp;#125;&amp;#125;&amp;#123;&amp;#123; &apos;hello vue&apos;.toUpperCase() &amp;#125;&amp;#125;&amp;#1">
   
     <link rel="alternative" href="/atom.xml" title="小全同学" type="application/atom+xml">
   
@@ -148,801 +148,73 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-微信小程序/微信小程序04——小程序常用内置组件" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Vue/01-基础指令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      微信小程序04——小程序常用内置组件
+      01-基础指令
     </h1>
   
 
         
-        <a href="/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
+        <a href="/2017/06/01/Vue/01-基础指令/" class="archive-article-date">
+  	<time datetime="2017-06-01T01:25:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>Created By 小全同学</p>
-</blockquote>
-<p>[TOC]</p>
-<a id="more"></a>
-<h2 id="view"><a href="#view" class="headerlink" title="view"></a>view</h2><p>视图容器，相当于<code>div</code>标签</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-<th>最低版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>hover-class</td>
-<td>String</td>
-<td>none</td>
-<td>指定按下去的样式类。当 <code>hover-class=&quot;none&quot;</code> 时，没有点击态效果</td>
-<td></td>
-</tr>
-<tr>
-<td>hover-stop-propagation</td>
-<td>Boolean</td>
-<td>false</td>
-<td>指定是否阻止本节点的祖先节点出现点击态</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.5.0</a></td>
-</tr>
-<tr>
-<td>hover-start-time</td>
-<td>Number</td>
-<td>50</td>
-<td>按住后多久出现点击态，单位毫秒</td>
-<td></td>
-</tr>
-<tr>
-<td>hover-stay-time</td>
-<td>Number</td>
-<td>400</td>
-<td>手指松开后点击态保留时间，单位毫秒</td>
-</tr>
-</tbody>
-</table>
-<h2 id="icon"><a href="#icon" class="headerlink" title="icon"></a>icon</h2><p>图标。</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>type</td>
-<td>String</td>
-<td></td>
-<td>icon的类型，有效值：success, success_no_circle, info, warn, waiting, cancel, download, search, clear</td>
-</tr>
-<tr>
-<td>size</td>
-<td>Number</td>
-<td>23</td>
-<td>icon的大小，单位px</td>
-</tr>
-<tr>
-<td>color</td>
-<td>Color</td>
-<td></td>
-<td>icon的颜色，同css的color</td>
-</tr>
-</tbody>
-</table>
-<p>示例代码：</p>
-<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"group"</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">block</span> <span class="attr">wx:for</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;iconSize&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">icon</span> <span class="attr">type</span>=<span class="string">"success"</span> <span class="attr">size</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;item&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">block</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"group"</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">block</span> <span class="attr">wx:for</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;iconType&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">icon</span> <span class="attr">type</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;item&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">size</span>=<span class="string">"40"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">block</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"group"</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">block</span> <span class="attr">wx:for</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;iconColor&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">icon</span> <span class="attr">type</span>=<span class="string">"success"</span> <span class="attr">size</span>=<span class="string">"40"</span> <span class="attr">color</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;item&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">block</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">javascript</span></span><br><span class="line"><span class="selector-tag">Page</span>(&#123;</span><br><span class="line">  <span class="attribute">data</span>: &#123;</span><br><span class="line">    <span class="attribute">iconSize</span>: [<span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">50</span>, <span class="number">60</span>, <span class="number">70</span>],</span><br><span class="line">    <span class="attribute">iconColor</span>: [</span><br><span class="line">      <span class="string">'red'</span>, <span class="string">'orange'</span>, <span class="string">'yellow'</span>, <span class="string">'green'</span>, <span class="string">'rgb(0,255,255)'</span>, <span class="string">'blue'</span>, <span class="string">'purple'</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attribute">iconType</span>: [</span><br><span class="line">      <span class="string">'success'</span>, <span class="string">'success_no_circle'</span>, <span class="string">'info'</span>, <span class="string">'warn'</span>, <span class="string">'waiting'</span>, <span class="string">'cancel'</span>, <span class="string">'download'</span>, <span class="string">'search'</span>, <span class="string">'clear'</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="text"><a href="#text" class="headerlink" title="text"></a>text</h2><p>文本。</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-<th>最低版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>selectable</td>
-<td>Boolean</td>
-<td>false</td>
-<td>文本是否可选</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
-</tr>
-<tr>
-<td>space</td>
-<td>String</td>
-<td>false</td>
-<td>显示连续空格</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
-</tr>
-<tr>
-<td>decode</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否解码</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>space 有效值：</strong></p>
-<table>
-<thead>
-<tr>
-<th>值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ensp</td>
-<td>中文字符空格一半大小</td>
-</tr>
-<tr>
-<td>emsp</td>
-<td>中文字符空格大小</td>
-</tr>
-<tr>
-<td>nbsp</td>
-<td>根据字体设置的空格大小</td>
-</tr>
-</tbody>
-</table>
-<h5 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h5><ul>
-<li>decode可以解析的有 <code>&amp;nbsp;</code> <code>&amp;lt;</code> <code>&amp;gt;</code> <code>&amp;amp;</code> <code>&amp;apos;</code> <code>&amp;ensp;</code> <code>&amp;emsp;</code></li>
-<li>各个操作系统的空格标准并不一致。</li>
-<li><code>&lt;text/&gt;</code> 组件内只支持 <code>&lt;text/&gt;</code> 嵌套。</li>
-<li>除了文本节点以外的其他节点都无法长按选中。</li>
+        <h2 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h2><p><strong>Created By 小全同学</strong></p>
+<p>在HTML中直接嵌入JavaScript代码，需要使用表达式</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">&#123;&#123; <span class="number">10</span> + <span class="number">20</span> &#125;&#125;</span><br><span class="line">&#123;&#123; Math.random() &gt; <span class="number">0</span>.<span class="number">5</span> &#125;&#125;</span><br><span class="line">&#123;&#123; <span class="string">'hello vue'</span>.toUpperCase() &#125;&#125;</span><br><span class="line">&#123;&#123; <span class="number">0</span> &gt; <span class="number">1</span> ? <span class="string">'true'</span> : <span class="string">'false'</span> &#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>和AngularJS中使用规则一致</p>
+<p>注意：放置的代码，一定要具有返回值</p>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><h4 id="v-text"><a href="#v-text" class="headerlink" title="v-text"></a>v-text</h4><p>绑定内容值</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;h2&gt;&#123;&#123; <span class="selector-tag">a</span> &#125;&#125;&lt;/h2&gt;</span><br><span class="line">&lt;<span class="selector-tag">h2</span> v-text=<span class="string">"a"</span>&gt;&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<p>和AngularJS中ng-bind功能一致</p>
+<h4 id="v-model"><a href="#v-model" class="headerlink" title="v-model"></a>v-model</h4><p>双向绑定</p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-model</span>=<span class="string">"username"</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><span class="template-variable">&#123;&#123; username &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>和AngularJS中ng-model功能一致</p>
+<p>v-model是语法糖，不使用v-model也可实现（v-bind / v-on）</p>
+<p>注意：使用变量username的时候，一定需要在控制器中进行过定义</p>
+<h4 id="v-for"><a href="#v-for" class="headerlink" title="v-for"></a>v-for</h4><p>渲染列表</p>
+<p>关键字使用<code>of</code>或<code>in</code>都可以</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="comment">// 首先在数据中声明</span></span><br><span class="line">let vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line"><span class="symbol">    el:</span> <span class="string">'#app'</span>,</span><br><span class="line"><span class="symbol">    data:</span> &#123;</span><br><span class="line"><span class="symbol">        people:</span> [</span><br><span class="line">            &#123; <span class="string">name:</span> <span class="string">'xiaoming'</span>, <span class="string">age:</span> <span class="number">19</span> &#125;,</span><br><span class="line">            &#123; <span class="string">name:</span> <span class="string">'xiaohong'</span>, <span class="string">age:</span> <span class="number">20</span> &#125;,</span><br><span class="line">            &#123; <span class="string">name:</span> <span class="string">'xiaoli'</span>, <span class="string">age:</span> <span class="number">12</span> &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;!-- 在HTML中的使用 --&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;<span class="selector-tag">li</span> v-<span class="keyword">for</span>=<span class="string">"person in people"</span>&gt;&#123;&#123; person<span class="selector-class">.name</span> + <span class="string">' '</span> + person<span class="selector-class">.age</span> &#125;&#125;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;<span class="selector-tag">li</span> v-<span class="keyword">for</span>=<span class="string">"person of people"</span>&gt;&#123;&#123; person<span class="selector-class">.name</span> + <span class="string">' '</span> + person<span class="selector-class">.age</span> &#125;&#125;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;<span class="selector-tag">li</span> v-<span class="keyword">for</span>=<span class="string">"(person, index) in people"</span>&gt;&#123;&#123; index + <span class="string">' '</span> + person<span class="selector-class">.name</span> + <span class="string">' '</span> + person<span class="selector-class">.age</span> &#125;&#125;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;<span class="selector-tag">li</span> v-<span class="keyword">for</span>=<span class="string">"(person, index) of people"</span>&gt;&#123;&#123; index + <span class="string">' '</span> + person<span class="selector-class">.name</span> + <span class="string">' '</span> + person<span class="selector-class">.age</span> &#125;&#125;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="v-on"><a href="#v-on" class="headerlink" title="v-on"></a>v-on</h4><p>事件绑定</p>
+<p>和AngularJS不同，在Vue中，绑定任何事件都使用<code>v-on</code>这一个指令</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="comment">// 在method中声明方法</span></span><br><span class="line"><span class="keyword">let</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: '<span class="meta">#app',</span></span><br><span class="line">    methods: &#123;</span><br><span class="line">        <span class="keyword">show</span>() &#123;</span><br><span class="line">            console.<span class="built_in">log</span>('<span class="keyword">show</span>');</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line"><span class="comment">&lt;!-- 在HTML中的调用 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">v-on:click</span>=<span class="string">"show()"</span>&gt;</span>Show<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>简写形式</strong>，使用<code>@</code>代替了<code>v-on</code>指令</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">button</span> type=<span class="string">"button"</span> @click=<span class="string">"show()"</span>&gt;Show&lt;/button&gt;</span><br><span class="line">&lt;<span class="selector-tag">h2</span> @mouseover=<span class="string">"show()"</span>&gt;mouseover&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>修饰符</strong></p>
+<p>执行事件的同时，另外去执行其它的任务</p>
+<ul>
+<li><code>stop</code>：调用event.stopPropagation()</li>
+<li><code>prevent</code>：调用event.preventDefault()</li>
+<li><code>enter</code>：调用指定按键上触发的回调</li>
 </ul>
-<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"btn-area"</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"body-view"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">text</span>&gt;</span></span><span class="template-variable">&#123;&#123;text&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">text</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">bindtap</span>=<span class="string">"add"</span>&gt;</span>add line<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">bindtap</span>=<span class="string">"remove"</span>&gt;</span>remove line<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">view</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="keyword">var</span> initData = <span class="string">'this is first line\nthis is second line'</span></span><br><span class="line"><span class="keyword">var</span> extraLine = [];</span><br><span class="line">Page(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    text: initData</span><br><span class="line">  &#125;,</span><br><span class="line">  add: <span class="function"><span class="keyword">function</span><span class="params">(e)</span> </span>&#123;</span><br><span class="line">    extraLine.push(<span class="string">'other line'</span>)</span><br><span class="line">    <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">      text: initData + <span class="string">'\n'</span> + extraLine.join(<span class="string">'\n'</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  remove: <span class="function"><span class="keyword">function</span><span class="params">(e)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (extraLine.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      extraLine.pop()</span><br><span class="line">      <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">        text: initData + <span class="string">'\n'</span> + extraLine.join(<span class="string">'\n'</span>)</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="progress"><a href="#progress" class="headerlink" title="progress"></a>progress</h2><p>进度条。</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>percent</td>
-<td>Float</td>
-<td>无</td>
-<td>百分比0~100</td>
-</tr>
-<tr>
-<td>show-info</td>
-<td>Boolean</td>
-<td>false</td>
-<td>在进度条右侧显示百分比</td>
-</tr>
-<tr>
-<td>stroke-width</td>
-<td>Number</td>
-<td>6</td>
-<td>进度条线的宽度，单位px</td>
-</tr>
-<tr>
-<td>color</td>
-<td>Color</td>
-<td>#09BB07</td>
-<td>进度条颜色 （请使用 activeColor）</td>
-</tr>
-<tr>
-<td>activeColor</td>
-<td>Color</td>
-<td></td>
-<td>已选择的进度条的颜色</td>
-</tr>
-<tr>
-<td>backgroundColor</td>
-<td>Color</td>
-<td></td>
-<td>未选择的进度条的颜色</td>
-</tr>
-<tr>
-<td>active</td>
-<td>Boolean</td>
-<td>false</td>
-<td>进度条从左往右的动画</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;progress <span class="attribute">percent</span>=<span class="string">"20"</span> show-<span class="builtin-name">info</span> /&gt;</span><br><span class="line">&lt;progress <span class="attribute">percent</span>=<span class="string">"40"</span> <span class="attribute">stroke-width</span>=<span class="string">"12"</span> /&gt;</span><br><span class="line">&lt;progress <span class="attribute">percent</span>=<span class="string">"60"</span> <span class="attribute">color</span>=<span class="string">"pink"</span> /&gt;</span><br><span class="line">&lt;progress <span class="attribute">percent</span>=<span class="string">"80"</span> active /&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="button"><a href="#button" class="headerlink" title="button"></a>button</h2><p>按钮。</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-<th>生效时机</th>
-<th>最低版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>size</td>
-<td>String</td>
-<td>default</td>
-<td>按钮的大小</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>type</td>
-<td>String</td>
-<td>default</td>
-<td>按钮的样式类型</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>plain</td>
-<td>Boolean</td>
-<td>false</td>
-<td>按钮是否镂空，背景色透明</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>disabled</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否禁用</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>loading</td>
-<td>Boolean</td>
-<td>false</td>
-<td>名称前是否带 loading 图标</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>form-type</td>
-<td>String</td>
-<td></td>
-<td>用于 <code>&lt;form/&gt;</code> 组件，点击分别会触发 <code>&lt;form/&gt;</code> 组件的 submit/reset 事件</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>size 有效值：</strong></p>
-<table>
-<thead>
-<tr>
-<th>值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>default</td>
-<td></td>
-</tr>
-<tr>
-<td>mini</td>
-</tr>
-</tbody>
-</table>
-<p><strong>type 有效值：</strong></p>
-<table>
-<thead>
-<tr>
-<th>值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>primary</td>
-<td></td>
-</tr>
-<tr>
-<td>default</td>
-<td></td>
-</tr>
-<tr>
-<td>warn</td>
-</tr>
-</tbody>
-</table>
-<p><strong>form-type 有效值：</strong></p>
-<table>
-<thead>
-<tr>
-<th>值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>submit</td>
-<td>提交表单</td>
-</tr>
-<tr>
-<td>reset</td>
-<td>重置表单</td>
-</tr>
-</tbody>
-</table>
-<h2 id="audio"><a href="#audio" class="headerlink" title="audio"></a>audio</h2><p>音频。</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>String</td>
-<td></td>
-<td>audio 组件的唯一标识符</td>
-</tr>
-<tr>
-<td>src</td>
-<td>String</td>
-<td></td>
-<td>要播放音频的资源地址</td>
-</tr>
-<tr>
-<td>loop</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否循环播放</td>
-</tr>
-<tr>
-<td>controls</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否显示默认控件</td>
-</tr>
-<tr>
-<td>poster</td>
-<td>String</td>
-<td></td>
-<td>默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效</td>
-</tr>
-<tr>
-<td>name</td>
-<td>String</td>
-<td>未知音频</td>
-<td>默认控件上的音频名字，如果 controls 属性值为 false 则设置 name 无效</td>
-</tr>
-<tr>
-<td>author</td>
-<td>String</td>
-<td>未知作者</td>
-<td>默认控件上的作者名字，如果 controls 属性值为 false 则设置 author 无效</td>
-</tr>
-<tr>
-<td>binderror</td>
-<td>EventHandle</td>
-<td></td>
-<td>当发生错误时触发 error 事件，detail = {errMsg: MediaError.code}</td>
-</tr>
-<tr>
-<td>bindplay</td>
-<td>EventHandle</td>
-<td></td>
-<td>当开始/继续播放时触发play事件</td>
-</tr>
-<tr>
-<td>bindpause</td>
-<td>EventHandle</td>
-<td></td>
-<td>当暂停播放时触发 pause 事件</td>
-</tr>
-<tr>
-<td>bindtimeupdate</td>
-<td>EventHandle</td>
-<td></td>
-<td>当播放进度改变时触发 timeupdate 事件，detail = {currentTime, duration}</td>
-</tr>
-<tr>
-<td>bindended</td>
-<td>EventHandle</td>
-<td></td>
-<td>当播放到末尾时触发 ended 事件</td>
-</tr>
-</tbody>
-</table>
-<p><strong>MediaError.code</strong></p>
-<table>
-<thead>
-<tr>
-<th>返回错误码</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MEDIA_ERR_ABORTED</td>
-<td>获取资源被用户禁止</td>
-</tr>
-<tr>
-<td>MEDIA_ERR_NETWORD</td>
-<td>网络错误</td>
-</tr>
-<tr>
-<td>MEDIA_ERR_DECODE</td>
-<td>解码错误</td>
-</tr>
-<tr>
-<td>MEDIA_ERR_SRC_NOT_SUPPOERTED</td>
-<td>不合适资源</td>
-</tr>
-</tbody>
-</table>
-<p><strong>示例代码：</strong></p>
-<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- audio.wxml --&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">poster</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;poster&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">name</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;name&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">author</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;author&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">src</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;src&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">id</span>=<span class="string">"myAudio"</span> <span class="attr">controls</span> <span class="attr">loop</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"primary"</span> <span class="attr">bindtap</span>=<span class="string">"audioPlay"</span>&gt;</span>播放<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"primary"</span> <span class="attr">bindtap</span>=<span class="string">"audioPause"</span>&gt;</span>暂停<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"primary"</span> <span class="attr">bindtap</span>=<span class="string">"audio14"</span>&gt;</span>设置当前播放时间为14秒<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"primary"</span> <span class="attr">bindtap</span>=<span class="string">"audioStart"</span>&gt;</span>回到开头<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="comment">// audio.js</span></span><br><span class="line">Page(&#123;</span><br><span class="line">  onReady: <span class="function"><span class="keyword">function</span> <span class="params">(e)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 使用 wx.createAudioContext 获取 audio 上下文 context</span></span><br><span class="line">    <span class="keyword">this</span>.audioCtx = wx.createAudioContext(<span class="string">'myAudio'</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  data: &#123;</span><br><span class="line">    poster: <span class="string">'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000'</span>,</span><br><span class="line">    name: <span class="string">'此时此刻'</span>,</span><br><span class="line">    author: <span class="string">'许巍'</span>,</span><br><span class="line">    src: <span class="string">'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&amp;uin=346897220&amp;vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&amp;fromtag=46'</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  audioPlay: <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.audioCtx.play()</span><br><span class="line">  &#125;,</span><br><span class="line">  audioPause: <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.audioCtx.pause()</span><br><span class="line">  &#125;,</span><br><span class="line">  audio14: <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.audioCtx.seek(<span class="number">14</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  audioStart: <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.audioCtx.seek(<span class="number">0</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="image"><a href="#image" class="headerlink" title="image"></a>image</h2><p>图片。</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-<th>最低版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>src</td>
-<td>String</td>
-<td></td>
-<td>图片资源地址</td>
-<td></td>
-</tr>
-<tr>
-<td>mode</td>
-<td>String</td>
-<td>‘scaleToFill’</td>
-<td>图片裁剪、缩放的模式</td>
-</tr>
-</tbody>
-</table>
-<p><strong>注：image组件默认宽度300px、高度225px</strong></p>
-<p><strong>mode 有效值：</strong></p>
-<p>mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。</p>
-<table>
-<thead>
-<tr>
-<th>模式</th>
-<th>值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>缩放</td>
-<td>scaleToFill</td>
-<td>不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素</td>
-</tr>
-<tr>
-<td>缩放</td>
-<td>aspectFit</td>
-<td>保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整的将图片显示出来。</td>
-</tr>
-<tr>
-<td>缩放</td>
-<td>aspectFill</td>
-<td>保持纵横比缩放图片，只保证图片的短边能完全显示出来。也就是说，图片通常只在水平或垂直方向是完整的，另一个方向将会发生截取。</td>
-</tr>
-<tr>
-<td>缩放</td>
-<td>widthFix</td>
-<td>宽度不变，高度自动变化，保持原图宽高比不变</td>
-</tr>
-<tr>
-<td>裁剪</td>
-<td>top</td>
-<td>不缩放图片，只显示图片的顶部区域</td>
-</tr>
-<tr>
-<td>裁剪</td>
-<td>bottom</td>
-<td>不缩放图片，只显示图片的底部区域</td>
-</tr>
-<tr>
-<td>裁剪</td>
-<td>center</td>
-<td>不缩放图片，只显示图片的中间区域</td>
-</tr>
-<tr>
-<td>裁剪</td>
-<td>left</td>
-<td>不缩放图片，只显示图片的左边区域</td>
-</tr>
-<tr>
-<td>裁剪</td>
-<td>right</td>
-<td>不缩放图片，只显示图片的右边区域</td>
-</tr>
-<tr>
-<td>裁剪</td>
-<td>top left</td>
-<td>不缩放图片，只显示图片的左上边区域</td>
-</tr>
-<tr>
-<td>裁剪</td>
-<td>top right</td>
-<td>不缩放图片，只显示图片的右上边区域</td>
-</tr>
-<tr>
-<td>裁剪</td>
-<td>bottom left</td>
-<td>不缩放图片，只显示图片的左下边区域</td>
-</tr>
-<tr>
-<td>裁剪</td>
-<td>bottom right</td>
-<td>不缩放图片，只显示图片的右下边区域</td>
-</tr>
-</tbody>
-</table>
-<p>##video</p>
-<p>视频。</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-<th>最低版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>src</td>
-<td>String</td>
-<td></td>
-<td>要播放视频的资源地址</td>
-<td></td>
-</tr>
-<tr>
-<td>initial-time</td>
-<td>Number</td>
-<td></td>
-<td>指定视频初始播放位置</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.6.0</a></td>
-</tr>
-<tr>
-<td>duration</td>
-<td>Number</td>
-<td></td>
-<td>指定视频时长</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
-</tr>
-<tr>
-<td>controls</td>
-<td>Boolean</td>
-<td>true</td>
-<td>是否显示默认播放控件（播放/暂停按钮、播放进度、时间）</td>
-<td></td>
-</tr>
-<tr>
-<td>danmu-list</td>
-<td>Object Array</td>
-<td></td>
-<td>弹幕列表</td>
-<td></td>
-</tr>
-<tr>
-<td>danmu-btn</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否显示弹幕按钮，只在初始化时有效，不能动态变更</td>
-<td></td>
-</tr>
-<tr>
-<td>enable-danmu</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否展示弹幕，只在初始化时有效，不能动态变更</td>
-<td></td>
-</tr>
-<tr>
-<td>autoplay</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否自动播放</td>
-<td></td>
-</tr>
-<tr>
-<td>loop</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否循环播放</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
-</tr>
-<tr>
-<td>muted</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否静音播放</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
-</tr>
-<tr>
-<td>page-gesture</td>
-<td>Boolean</td>
-<td>false</td>
-<td>在非全屏模式下，是否开启亮度与音量调节手势</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.6.0</a></td>
-</tr>
-<tr>
-<td>bindplay</td>
-<td>EventHandle</td>
-<td></td>
-<td>当开始/继续播放时触发play事件</td>
-<td></td>
-</tr>
-<tr>
-<td>bindpause</td>
-<td>EventHandle</td>
-<td></td>
-<td>当暂停播放时触发 pause 事件</td>
-<td></td>
-</tr>
-<tr>
-<td>bindended</td>
-<td>EventHandle</td>
-<td></td>
-<td>当播放到末尾时触发 ended 事件</td>
-<td></td>
-</tr>
-<tr>
-<td>bindtimeupdate</td>
-<td>EventHandle</td>
-<td></td>
-<td>播放进度变化时触发，event.detail = {currentTime: ‘当前播放时间’} 。触发频率应该在 250ms 一次</td>
-<td></td>
-</tr>
-<tr>
-<td>bindfullscreenchange</td>
-<td>EventHandle</td>
-<td></td>
-<td>当视频进入和退出全屏是触发，event.detail = {fullScreen: ‘当前全屏状态’}</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.4.0</a></td>
-</tr>
-<tr>
-<td>objectFit</td>
-<td>String</td>
-<td>contain</td>
-<td>当视频大小与 video 容器大小不一致时，视频的表现形式。contain：包含，fill：填充，cover：覆盖</td>
-<td></td>
-</tr>
-<tr>
-<td>poster</td>
-<td>String</td>
-<td></td>
-<td>默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效</td>
-</tr>
-</tbody>
-</table>
-<p>video标签认宽度300px、高度225px，设置宽高需要通过wxss设置width和height。</p>
-<p><strong>示例代码：</strong></p>
-<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"section tc"</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;src&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>   <span class="attr">controls</span> &gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"btn-area"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">bindtap</span>=<span class="string">"bindButtonTap"</span>&gt;</span>获取视频<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">view</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"section tc"</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">"myVideo"</span> <span class="attr">src</span>=<span class="string">"http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&amp;bizid=1023&amp;hy=SH&amp;fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"</span> <span class="attr">danmu-list</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;danmuList&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">enable-danmu</span> <span class="attr">danmu-btn</span> <span class="attr">controls</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"btn-area"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">bindtap</span>=<span class="string">"bindButtonTap"</span>&gt;</span>获取视频<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">bindblur</span>=<span class="string">"bindInputBlur"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">bindtap</span>=<span class="string">"bindSendDanmu"</span>&gt;</span>发送弹幕<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">view</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRandomColor</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> rgb = []</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span> ; i &lt; <span class="number">3</span>; ++i)&#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="built_in">color</span> = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * <span class="number">256</span>).toString(<span class="number">16</span>)</span><br><span class="line">    <span class="built_in">color</span> = <span class="built_in">color</span>.length == <span class="number">1</span> ? <span class="string">'0'</span> + <span class="attribute">color</span> : <span class="built_in">color</span></span><br><span class="line">    rgb.push(<span class="built_in">color</span>)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'#'</span> + rgb.join(<span class="string">''</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Page(&#123;</span><br><span class="line">  <span class="attribute">onReady</span>: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.videoContext = wx.createVideoContext(<span class="string">'myVideo'</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attribute">inputValue</span>: <span class="string">''</span>,</span><br><span class="line">    <span class="attribute">data</span>: &#123;</span><br><span class="line">        <span class="attribute">src</span>: <span class="string">''</span>,</span><br><span class="line">    <span class="attribute">danmuList</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attribute">text</span>: <span class="string">'第 1s 出现的弹幕'</span>,</span><br><span class="line">        <span class="attribute">color</span>: <span class="string">'#ff0000'</span>,</span><br><span class="line">        <span class="attribute">time</span>: <span class="number">1</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attribute">text</span>: <span class="string">'第 3s 出现的弹幕'</span>,</span><br><span class="line">        <span class="attribute">color</span>: <span class="string">'#ff00ff'</span>,</span><br><span class="line">        <span class="attribute">time</span>: <span class="number">3</span></span><br><span class="line">    &#125;]</span><br><span class="line">    &#125;,</span><br><span class="line">  <span class="attribute">bindInputBlur</span>: <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.inputValue = e.detail.value</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attribute">bindButtonTap</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> that = <span class="keyword">this</span></span><br><span class="line">    wx.chooseVideo(&#123;</span><br><span class="line">      <span class="attribute">sourceType</span>: [<span class="string">'album'</span>, <span class="string">'camera'</span>],</span><br><span class="line">      <span class="attribute">maxDuration</span>: <span class="number">60</span>,</span><br><span class="line">      <span class="attribute">camera</span>: [<span class="string">'front'</span>,<span class="string">'back'</span>],</span><br><span class="line">      <span class="attribute">success</span>: <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;</span><br><span class="line">        that.setData(&#123;</span><br><span class="line">          <span class="attribute">src</span>: res.tempFilePath</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attribute">bindSendDanmu</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.videoContext.sendDanmu(&#123;</span><br><span class="line">      <span class="attribute">text</span>: <span class="keyword">this</span>.inputValue,</span><br><span class="line">      <span class="attribute">color</span>: getRandomColor()</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="swiper"><a href="#swiper" class="headerlink" title="swiper"></a>swiper</h2><p>滑块视图容器。</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-<th>最低版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>indicator-dots</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否显示面板指示点</td>
-<td></td>
-</tr>
-<tr>
-<td>indicator-color</td>
-<td>Color</td>
-<td>rgba(0, 0, 0, .3)</td>
-<td>指示点颜色</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
-</tr>
-<tr>
-<td>indicator-active-color</td>
-<td>Color</td>
-<td>#000000</td>
-<td>当前选中的指示点颜色</td>
-<td><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
-</tr>
-<tr>
-<td>autoplay</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否自动切换</td>
-<td></td>
-</tr>
-<tr>
-<td>current</td>
-<td>Number</td>
-<td>0</td>
-<td>当前所在页面的 index</td>
-<td></td>
-</tr>
-<tr>
-<td>interval</td>
-<td>Number</td>
-<td>5000</td>
-<td>自动切换时间间隔</td>
-<td></td>
-</tr>
-<tr>
-<td>duration</td>
-<td>Number</td>
-<td>500</td>
-<td>滑动动画时长</td>
-<td></td>
-</tr>
-<tr>
-<td>circular</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否采用衔接滑动</td>
-<td></td>
-</tr>
-<tr>
-<td>vertical</td>
-<td>Boolean</td>
-<td>false</td>
-<td>滑动方向是否为纵向</td>
-<td></td>
-</tr>
-<tr>
-<td>bindchange</td>
-<td>EventHandle</td>
-<td></td>
-<td>current 改变时会触发 change 事件，event.detail = {current: current, source: source}</td>
-</tr>
-</tbody>
-</table>
-<p>在<code>swiper</code>中只可放置<code>&lt;swiper-item/&gt;</code>组件，否则会导致未定义的行为。</p>
-<h4 id="swiper-item"><a href="#swiper-item" class="headerlink" title="swiper-item"></a>swiper-item</h4><p>仅可放置在<code>&lt;swiper/&gt;</code>组件中，宽高自动设置为100%。</p>
-<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">swiper</span> <span class="attr">indicator-dots</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;indicatorDots&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span></span></span></span><br><span class="line"><span class="xml">  autoplay="</span><span class="template-variable">&#123;&#123;autoplay&#125;&#125;</span><span class="xml">" interval="</span><span class="template-variable">&#123;&#123;interval&#125;&#125;</span><span class="xml">" duration="</span><span class="template-variable">&#123;&#123;duration&#125;&#125;</span><span class="xml">"&gt;</span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">block</span> <span class="attr">wx:for</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;imgUrls&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">swiper-item</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">image</span> <span class="attr">src</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123;item&#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">class</span>=<span class="string">"slide-image"</span> <span class="attr">width</span>=<span class="string">"355"</span> <span class="attr">height</span>=<span class="string">"150"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">swiper-item</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">block</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">swiper</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">bindtap</span>=<span class="string">"changeIndicatorDots"</span>&gt;</span> indicator-dots <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">bindtap</span>=<span class="string">"changeAutoplay"</span>&gt;</span> autoplay <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">slider</span> <span class="attr">bindchange</span>=<span class="string">"intervalChange"</span> <span class="attr">show-value</span> <span class="attr">min</span>=<span class="string">"500"</span> <span class="attr">max</span>=<span class="string">"2000"</span>/&gt;</span> interval</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">slider</span> <span class="attr">bindchange</span>=<span class="string">"durationChange"</span> <span class="attr">show-value</span> <span class="attr">min</span>=<span class="string">"1000"</span> <span class="attr">max</span>=<span class="string">"10000"</span>/&gt;</span> duration</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">Page(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    imgUrls: [</span><br><span class="line">      <span class="string">'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'</span>,</span><br><span class="line">      <span class="string">'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'</span>,</span><br><span class="line">      <span class="string">'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'</span></span><br><span class="line">    ],</span><br><span class="line">    indicatorDots: <span class="literal">false</span>,</span><br><span class="line">    autoplay: <span class="literal">false</span>,</span><br><span class="line">    interval: <span class="number">5000</span>,</span><br><span class="line">    duration: <span class="number">1000</span></span><br><span class="line">  &#125;,</span><br><span class="line">  changeIndicatorDots: <span class="function"><span class="keyword">function</span><span class="params">(e)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">      indicatorDots: !<span class="keyword">this</span>.data.indicatorDots</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  changeAutoplay: <span class="function"><span class="keyword">function</span><span class="params">(e)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">      autoplay: !<span class="keyword">this</span>.data.autoplay</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  intervalChange: <span class="function"><span class="keyword">function</span><span class="params">(e)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">      interval: e.detail.value</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  durationChange: <span class="function"><span class="keyword">function</span><span class="params">(e)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">      duration: e.detail.value</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;input <span class="attribute">type</span>=<span class="string">"text"</span> @keyup.<span class="attribute">enter</span>=<span class="string">"show()"</span>&gt;</span><br><span class="line">&lt;input <span class="attribute">type</span>=<span class="string">"text"</span> @keyup.<span class="attribute">13</span>=<span class="string">"show()"</span>&gt;</span><br><span class="line">&lt;a <span class="attribute">href</span>=<span class="string">"http://blog.lidaze.com"</span> @click.<span class="attribute">prevent</span>=<span class="string">"show()"</span>&gt;李大泽&lt;/a&gt;</span><br><span class="line">&lt;div @click.<span class="attribute">stop</span>=<span class="string">"show()"</span>&gt;阻止事件冒泡&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>传递参数</strong></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">h2</span> @click=<span class="string">"show($event)"</span>&gt;<span class="variable">$event</span>参数&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">methods: &#123;</span><br><span class="line">    <span class="keyword">show</span>(e) &#123; <span class="comment">// e代表传递进来的参数</span></span><br><span class="line">        console.<span class="built_in">log</span>(e);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a>v-bind</h4><p>绑定属性</p>
+<figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;img v-<span class="keyword">bind</span>:src=<span class="string">"imgUrl"</span>&gt;</span><br><span class="line">&lt;a v-<span class="keyword">bind</span>:href=<span class="string">"blogUrl"</span>&gt;&#123;&#123; blogName &#125;&#125;&lt;/a&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> v-<span class="keyword">bind</span>:class=<span class="string">"&#123; 'active': flag &#125;"</span>&gt;v-<span class="keyword">bind</span>:class&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> v-<span class="keyword">bind</span>:style=<span class="string">"&#123; fontSize: '50px' &#125;"</span>&gt;v-<span class="keyword">bind</span>:style&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> v-<span class="keyword">bind</span>=<span class="string">"&#123; id: 'div1', title: 'i\'m div' &#125;"</span>&gt;v-<span class="keyword">bind</span>&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>简写形式</strong>，使用<code>:</code>来代替<code>v-bind</code>指令</p>
+<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">:src</span>=<span class="string">"imgUrl"</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">:href</span>=<span class="string">"blogUrl"</span>&gt;</span></span><span class="template-variable">&#123;&#123; blogName &#125;</span><span class="xml">&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"</span></span></span><span class="template-variable">&#123; 'active': flag &#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span>v-bind:class<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:style</span>=<span class="string">"</span></span></span><span class="template-variable">&#123; fontSize: '50px' &#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span>v-bind:style<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="v-if-v-else-if-v-else"><a href="#v-if-v-else-if-v-else" class="headerlink" title="v-if  v-else-if  v-else"></a>v-if  v-else-if  v-else</h4><p>是否渲染</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">div</span> v-<span class="keyword">if</span>=<span class="string">"type === 'A'"</span>&gt;A&lt;/div&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span> v-<span class="keyword">else</span>-<span class="keyword">if</span>=<span class="string">"type === 'B'"</span>&gt;B&lt;/div&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span> v-<span class="keyword">else</span>-<span class="keyword">if</span>=<span class="string">"type === 'C'"</span>&gt;C&lt;/div&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span> v-<span class="keyword">else</span>&gt;Not A/B/C&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a>v-show</h4><p>显示隐藏标签</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">h2</span> v-show=<span class="string">"flag"</span>&gt;v-show&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="v-cloak"><a href="#v-cloak" class="headerlink" title="v-cloak"></a>v-cloak</h4><p>这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">div</span> id=<span class="string">"app"</span> v-cloak&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="v-once"><a href="#v-once" class="headerlink" title="v-once"></a>v-once</h4><p>只渲染元素和组件<strong>一次</strong>。随后的重新渲染,元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="selector-tag">h2</span> @click=<span class="string">"change()"</span> v-once&gt;&#123;&#123; msg &#125;&#125;&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">change () &#123;</span><br><span class="line">    <span class="keyword">this</span>.msg += <span class="string">'ggggggggg'</span>;</span><br><span class="line">    console.log(<span class="keyword">this</span>.msg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
 
@@ -1022,7 +294,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/06/01/Vue/01-基础指令/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -1036,20 +308,15 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/06/04/Vue/00-Vue基础/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          微信小程序01——快速创建微信小程序项目模板
+          00-Vue基础
         
       </div>
     </a>
   
-  
-    <a href="/2017/12/14/微信小程序/微信小程序06——模块化/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">微信小程序06——模块化</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
@@ -1075,7 +342,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="微信小程序/微信小程序04——小程序常用内置组件" data-title="微信小程序04——小程序常用内置组件" data-url="http://yoursite.com/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/"></div>
+	<div class="ds-thread" data-thread-key="Vue/01-基础指令" data-title="01-基础指令" data-url="http://yoursite.com/2017/06/01/Vue/01-基础指令/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -1098,8 +365,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/", 
-    sourceId: "微信小程序/微信小程序04——小程序常用内置组件",
+    url: "http://yoursite.com/2017/06/01/Vue/01-基础指令/", 
+    sourceId: "Vue/01-基础指令",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -1108,7 +375,7 @@
   
 
   
-  <div id="SOHUCS" sid="微信小程序/微信小程序04——小程序常用内置组件" ></div> 
+  <div id="SOHUCS" sid="Vue/01-基础指令" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
