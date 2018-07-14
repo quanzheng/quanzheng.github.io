@@ -6,22 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>微信小程序01——快速创建微信小程序项目模板 | 小全同学</title>
+  <title>15-ref | 小全同学</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Created By 小全同学  登录微信小程序开发账号：https://mp.weixin.qq.com 微信开发者工具下载：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119">
+  <meta name="description" content="$refsCreated By 小全同学 尽管有props和events，但是仍然需要在JavaScript中直接访问子组件。 为此可以使用ref为子组件指定一个索引ID。    注意，ref并不是动态更新的，也就是说不应该绑定变量，而是写一个固定值即可。  在home.vue中添加list组件 12345html&amp;lt;div class=&quot;home&quot;&amp;gt;    &amp;lt;list ref=&quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序01——快速创建微信小程序项目模板">
-<meta property="og:url" content="http://yoursite.com/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/index.html">
+<meta property="og:title" content="15-ref">
+<meta property="og:url" content="http://yoursite.com/2017/06/07/Vue/15-ref/index.html">
 <meta property="og:site_name" content="小全同学">
-<meta property="og:description" content="Created By 小全同学  登录微信小程序开发账号：https://mp.weixin.qq.com 微信开发者工具下载：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119">
+<meta property="og:description" content="$refsCreated By 小全同学 尽管有props和events，但是仍然需要在JavaScript中直接访问子组件。 为此可以使用ref为子组件指定一个索引ID。    注意，ref并不是动态更新的，也就是说不应该绑定变量，而是写一个固定值即可。  在home.vue中添加list组件 12345html&amp;lt;div class=&quot;home&quot;&amp;gt;    &amp;lt;list ref=&quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://og1y9bein.bkt.clouddn.com/20171201151210946175956.png">
-<meta property="og:image" content="http://og1y9bein.bkt.clouddn.com/20171201151210961118245.png">
-<meta property="og:updated_time" content="2018-07-12T10:29:02.000Z">
+<meta property="og:updated_time" content="2018-07-14T15:49:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="微信小程序01——快速创建微信小程序项目模板">
-<meta name="twitter:description" content="Created By 小全同学  登录微信小程序开发账号：https://mp.weixin.qq.com 微信开发者工具下载：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119">
-<meta name="twitter:image" content="http://og1y9bein.bkt.clouddn.com/20171201151210946175956.png">
+<meta name="twitter:title" content="15-ref">
+<meta name="twitter:description" content="$refsCreated By 小全同学 尽管有props和events，但是仍然需要在JavaScript中直接访问子组件。 为此可以使用ref为子组件指定一个索引ID。    注意，ref并不是动态更新的，也就是说不应该绑定变量，而是写一个固定值即可。  在home.vue中添加list组件 12345html&amp;lt;div class=&quot;home&quot;&amp;gt;    &amp;lt;list ref=&quot;">
   
     <link rel="alternative" href="/atom.xml" title="小全同学" type="application/atom+xml">
   
@@ -151,45 +148,46 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-微信小程序/微信小程序01——快速创建微信小程序项目模板" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Vue/15-ref" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      微信小程序01——快速创建微信小程序项目模板
+      15-ref
     </h1>
   
 
         
-        <a href="/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
+        <a href="/2017/06/07/Vue/15-ref/" class="archive-article-date">
+  	<time datetime="2017-06-07T12:17:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>Created By 小全同学</p>
+        <h1 id="refs"><a href="#refs" class="headerlink" title="$refs"></a>$refs</h1><p><strong>Created By 小全同学</strong></p>
+<p>尽管有props和events，但是仍然需要在JavaScript中直接访问子组件。</p>
+<p>为此可以使用<code>ref</code>为子组件指定一个索引ID。</p>
+<blockquote>
+<p>  注意，ref并不是动态更新的，也就是说不应该绑定变量，而是写一个固定值即可。</p>
 </blockquote>
-<p>登录微信小程序开发账号：<a href="https://mp.weixin.qq.com" target="_blank" rel="noopener">https://mp.weixin.qq.com</a></p>
-<p>微信开发者工具下载：<a href="https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119" target="_blank" rel="noopener">https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119</a></p>
-<a id="more"></a>
-<h2 id="快速创建第一个小程序"><a href="#快速创建第一个小程序" class="headerlink" title="快速创建第一个小程序"></a>快速创建第一个小程序</h2><p> 打开开发者工具</p>
-<ol>
-<li><p>新建项目选择小程序项目，选择代码存放的硬盘路径</p>
-<p><img src="http://og1y9bein.bkt.clouddn.com/20171201151210946175956.png" alt="20171201151210946175956.png"></p>
-</li>
-<li><p>填入刚刚申请到的小程序的 AppID，给你的项目起一个好听的名字（登录 <a href="https://mp.weixin.qq.com/" target="_blank" rel="noopener">https://mp.weixin.qq.com</a> ，我们可以在菜单 “<strong>设置</strong>”-“<strong>开发设置</strong>” 看到小程序的 AppID 了 。）</p>
-</li>
-<li><p>最后，勾选 “创建 QuickStart 项目” (注意: 你要选择一个空的目录才会有这个选项)，点击确定，你就得到了你的第一个小程序了，点击顶部菜单编译就可以在 IDE 预览你的第一个小程序。</p>
-</li>
-</ol>
-<p><img src="http://og1y9bein.bkt.clouddn.com/20171201151210961118245.png" alt="20171201151210961118245.png"></p>
-<p><strong>在手机端运行小程序</strong>：</p>
-<p>点击工具上的编译按钮，可以在工具的左侧模拟器界面看到这个小程序的表现，也可以点击预览按钮，通过微信的扫一扫在手机上体验你的第一个小程序。</p>
+<p>在<code>home.vue</code>中添加list组件</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"home"</span>&gt;</span><br><span class="line">    &lt;<span class="built_in">list</span> <span class="keyword">ref</span>=<span class="string">"childList"</span>&gt;&lt;/<span class="built_in">list</span>&gt;</span><br><span class="line">    &lt;button @click=<span class="string">"getChild()"</span>&gt;获取子组件&lt;/button&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><code>home.vue</code>中的的方法中，可以直接访问到子组件对象</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="keyword">import</span> <span class="built_in">List</span> from <span class="string">'../components/list'</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    components: &#123; <span class="built_in">List</span> &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        getChild() &#123;</span><br><span class="line">            <span class="comment">// 获取子组件中的数据</span></span><br><span class="line">            console.log(<span class="keyword">this</span>.$refs.childList.$data.name);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 调用子组件中的方法</span></span><br><span class="line">            <span class="keyword">this</span>.$refs.childList.test1();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>list.vue</code>组件中的数据：</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">export <span class="keyword">default</span> &#123;</span><br><span class="line">    data() &#123;</span><br><span class="line">        return &#123;</span><br><span class="line">            name: <span class="string">'list'</span>,</span><br><span class="line">            version: <span class="string">'1.0.0'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        test1() &#123;</span><br><span class="line">            console.log(<span class="string">'test1'</span>);</span><br><span class="line">        &#125;,</span><br><span class="line">        test2() &#123;</span><br><span class="line">            console.log(<span class="string">'test2'</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="子组件向父组件传值"><a href="#子组件向父组件传值" class="headerlink" title="子组件向父组件传值"></a>子组件向父组件传值</h1><blockquote>
+<p>  注意：子组件同样也可以调用父组件中的方法，通过props传值即可</p>
+<p>  通过此种方法，子组件也可以传值给父组件</p>
+</blockquote>
+<p>父组件中</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">lang</span>=<span class="string">"html"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"home"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">list</span> <span class="attr">:func</span>=<span class="string">"test3"</span>&gt;</span><span class="tag">&lt;/<span class="name">list</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">import</span> List <span class="keyword">from</span> <span class="string">'../components/list'</span></span></span><br><span class="line"><span class="javascript"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="undefined">    components: &#123; List &#125;,</span></span><br><span class="line"><span class="undefined">    methods: &#123;</span></span><br><span class="line"><span class="actionscript">        test3(value) &#123; <span class="comment">// 参数value就是子组件传递给父组件的值</span></span></span><br><span class="line"><span class="javascript">            <span class="built_in">console</span>.log(<span class="string">'test3'</span>, value);</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>子组件中</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">lang</span>=<span class="string">"html"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>4<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>5<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"userParentFunc()"</span>&gt;</span>调用父组件中的方法<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="actionscript">    props: [<span class="string">'func'</span>],</span></span><br><span class="line"><span class="undefined">    methods: &#123;</span></span><br><span class="line"><span class="undefined">        userParentFunc() &#123;</span></span><br><span class="line"><span class="actionscript">            <span class="keyword">this</span>.func(<span class="string">'我是子组件中的数据'</span>);</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"css"</span> <span class="attr">scoped</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
       
 
@@ -269,7 +267,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/06/07/Vue/15-ref/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -283,18 +281,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/14/微信小程序/微信小程序06——模块化/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/06/07/Vue/17-自定义指令/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          微信小程序06——模块化
+          17-自定义指令
         
       </div>
     </a>
   
   
-    <a href="/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">微信小程序04——小程序常用内置组件</div>
+    <a href="/2017/06/07/Vue/20-全局配置/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">20-全局配置</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -322,7 +320,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="微信小程序/微信小程序01——快速创建微信小程序项目模板" data-title="微信小程序01——快速创建微信小程序项目模板" data-url="http://yoursite.com/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/"></div>
+	<div class="ds-thread" data-thread-key="Vue/15-ref" data-title="15-ref" data-url="http://yoursite.com/2017/06/07/Vue/15-ref/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -345,8 +343,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/", 
-    sourceId: "微信小程序/微信小程序01——快速创建微信小程序项目模板",
+    url: "http://yoursite.com/2017/06/07/Vue/15-ref/", 
+    sourceId: "Vue/15-ref",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -355,7 +353,7 @@
   
 
   
-  <div id="SOHUCS" sid="微信小程序/微信小程序01——快速创建微信小程序项目模板" ></div> 
+  <div id="SOHUCS" sid="Vue/15-ref" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({

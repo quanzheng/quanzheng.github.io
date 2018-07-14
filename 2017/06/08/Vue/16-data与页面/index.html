@@ -6,22 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>微信小程序01——快速创建微信小程序项目模板 | 小全同学</title>
+  <title>16-data与页面 | 小全同学</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Created By 小全同学  登录微信小程序开发账号：https://mp.weixin.qq.com 微信开发者工具下载：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119">
+  <meta name="description" content="数据修改后，为何页面会发生改变Created By 小全同学    在Vue中，每个一个数据，都会生成一对set和get方法  每次给数据赋值的时候，都会执行set方法，内部触发页面的更新 每次取出数据的时候，都会执行get方法 有些特殊情况，数据中的set和get方法不会被添加上，此时数据的改变，不会影响到页面 1234567891011121314javascriptcreated() &amp;#1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序01——快速创建微信小程序项目模板">
-<meta property="og:url" content="http://yoursite.com/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/index.html">
+<meta property="og:title" content="16-data与页面">
+<meta property="og:url" content="http://yoursite.com/2017/06/08/Vue/16-data与页面/index.html">
 <meta property="og:site_name" content="小全同学">
-<meta property="og:description" content="Created By 小全同学  登录微信小程序开发账号：https://mp.weixin.qq.com 微信开发者工具下载：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119">
+<meta property="og:description" content="数据修改后，为何页面会发生改变Created By 小全同学    在Vue中，每个一个数据，都会生成一对set和get方法  每次给数据赋值的时候，都会执行set方法，内部触发页面的更新 每次取出数据的时候，都会执行get方法 有些特殊情况，数据中的set和get方法不会被添加上，此时数据的改变，不会影响到页面 1234567891011121314javascriptcreated() &amp;#1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://og1y9bein.bkt.clouddn.com/20171201151210946175956.png">
-<meta property="og:image" content="http://og1y9bein.bkt.clouddn.com/20171201151210961118245.png">
-<meta property="og:updated_time" content="2018-07-12T10:29:02.000Z">
+<meta property="og:updated_time" content="2018-07-14T15:52:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="微信小程序01——快速创建微信小程序项目模板">
-<meta name="twitter:description" content="Created By 小全同学  登录微信小程序开发账号：https://mp.weixin.qq.com 微信开发者工具下载：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119">
-<meta name="twitter:image" content="http://og1y9bein.bkt.clouddn.com/20171201151210946175956.png">
+<meta name="twitter:title" content="16-data与页面">
+<meta name="twitter:description" content="数据修改后，为何页面会发生改变Created By 小全同学    在Vue中，每个一个数据，都会生成一对set和get方法  每次给数据赋值的时候，都会执行set方法，内部触发页面的更新 每次取出数据的时候，都会执行get方法 有些特殊情况，数据中的set和get方法不会被添加上，此时数据的改变，不会影响到页面 1234567891011121314javascriptcreated() &amp;#1">
   
     <link rel="alternative" href="/atom.xml" title="小全同学" type="application/atom+xml">
   
@@ -151,45 +148,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-微信小程序/微信小程序01——快速创建微信小程序项目模板" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Vue/16-data与页面" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      微信小程序01——快速创建微信小程序项目模板
+      16-data与页面
     </h1>
   
 
         
-        <a href="/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/" class="archive-article-date">
-  	<time datetime="2017-12-14T12:40:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
+        <a href="/2017/06/08/Vue/16-data与页面/" class="archive-article-date">
+  	<time datetime="2017-06-08T08:25:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>Created By 小全同学</p>
+        <h2 id="数据修改后，为何页面会发生改变"><a href="#数据修改后，为何页面会发生改变" class="headerlink" title="数据修改后，为何页面会发生改变"></a>数据修改后，为何页面会发生改变</h2><p><strong>Created By 小全同学</strong></p>
+<blockquote>
+<p>  在Vue中，每个一个数据，都会生成一对set和get方法</p>
 </blockquote>
-<p>登录微信小程序开发账号：<a href="https://mp.weixin.qq.com" target="_blank" rel="noopener">https://mp.weixin.qq.com</a></p>
-<p>微信开发者工具下载：<a href="https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119" target="_blank" rel="noopener">https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=2017119</a></p>
-<a id="more"></a>
-<h2 id="快速创建第一个小程序"><a href="#快速创建第一个小程序" class="headerlink" title="快速创建第一个小程序"></a>快速创建第一个小程序</h2><p> 打开开发者工具</p>
-<ol>
-<li><p>新建项目选择小程序项目，选择代码存放的硬盘路径</p>
-<p><img src="http://og1y9bein.bkt.clouddn.com/20171201151210946175956.png" alt="20171201151210946175956.png"></p>
-</li>
-<li><p>填入刚刚申请到的小程序的 AppID，给你的项目起一个好听的名字（登录 <a href="https://mp.weixin.qq.com/" target="_blank" rel="noopener">https://mp.weixin.qq.com</a> ，我们可以在菜单 “<strong>设置</strong>”-“<strong>开发设置</strong>” 看到小程序的 AppID 了 。）</p>
-</li>
-<li><p>最后，勾选 “创建 QuickStart 项目” (注意: 你要选择一个空的目录才会有这个选项)，点击确定，你就得到了你的第一个小程序了，点击顶部菜单编译就可以在 IDE 预览你的第一个小程序。</p>
-</li>
-</ol>
-<p><img src="http://og1y9bein.bkt.clouddn.com/20171201151210961118245.png" alt="20171201151210961118245.png"></p>
-<p><strong>在手机端运行小程序</strong>：</p>
-<p>点击工具上的编译按钮，可以在工具的左侧模拟器界面看到这个小程序的表现，也可以点击预览按钮，通过微信的扫一扫在手机上体验你的第一个小程序。</p>
+<p>每次给数据赋值的时候，都会执行set方法，内部触发页面的更新</p>
+<p>每次取出数据的时候，都会执行get方法</p>
+<p>有些特殊情况，数据中的set和get方法不会被添加上，此时数据的改变，不会影响到页面</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line">created() &#123;</span><br><span class="line">    setTimeout(() =&gt; &#123;</span><br><span class="line">        <span class="keyword">this</span>.<span class="keyword">data</span> = &#123;</span><br><span class="line">            err: <span class="number">0</span>,</span><br><span class="line">            <span class="keyword">data</span>: [</span><br><span class="line">                &#123; name: <span class="string">'xiaoming'</span> &#125;,</span><br><span class="line">                &#123; name: <span class="string">'xiaohong'</span> &#125;,</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 后面单独添加的msg不会生成set和get方法</span></span><br><span class="line">        <span class="keyword">this</span>.<span class="keyword">data</span>.msg = <span class="string">'OK'</span></span><br><span class="line">    &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>此时msg和页面并不是绑定状态，需要使用<code>$set</code>解决</p>
+<p>这里的setTimeout模拟网络请求，在实际的页面开发当中，比如说购物车，请求下来的数据遍历给每个数据添加一个flag，全选全不选单选单不选都要用到这个flag，在这里就可以用这个用法</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="comment">// 局部用法</span></span><br><span class="line"><span class="keyword">this</span>.$<span class="keyword">set</span>(<span class="keyword">this</span>.<span class="keyword">data</span>, <span class="string">'msg'</span>, <span class="string">'OK'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 全局用法</span></span><br><span class="line">Vue.<span class="keyword">set</span>(<span class="keyword">this</span>.<span class="keyword">data</span>, <span class="string">'msg'</span>, <span class="string">'OK'</span>)</span><br></pre></td></tr></table></figure>
 
       
 
@@ -269,7 +258,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/06/08/Vue/16-data与页面/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -283,18 +272,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/14/微信小程序/微信小程序06——模块化/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/06/08/Vue/14-兄弟组件传值/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          微信小程序06——模块化
+          14-兄弟组件传值
         
       </div>
     </a>
   
   
-    <a href="/2017/12/14/微信小程序/微信小程序04——小程序常用内置组件/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">微信小程序04——小程序常用内置组件</div>
+    <a href="/2017/06/07/Vue/10-Vue模块-Vue-Awesome-Swiper/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">10-Vue模块-Vue-Awesome-Swiper</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -322,7 +311,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="微信小程序/微信小程序01——快速创建微信小程序项目模板" data-title="微信小程序01——快速创建微信小程序项目模板" data-url="http://yoursite.com/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/"></div>
+	<div class="ds-thread" data-thread-key="Vue/16-data与页面" data-title="16-data与页面" data-url="http://yoursite.com/2017/06/08/Vue/16-data与页面/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -345,8 +334,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2017/12/14/微信小程序/微信小程序01——快速创建微信小程序项目模板/", 
-    sourceId: "微信小程序/微信小程序01——快速创建微信小程序项目模板",
+    url: "http://yoursite.com/2017/06/08/Vue/16-data与页面/", 
+    sourceId: "Vue/16-data与页面",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -355,7 +344,7 @@
   
 
   
-  <div id="SOHUCS" sid="微信小程序/微信小程序01——快速创建微信小程序项目模板" ></div> 
+  <div id="SOHUCS" sid="Vue/16-data与页面" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
