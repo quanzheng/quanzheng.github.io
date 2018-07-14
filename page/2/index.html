@@ -146,6 +146,122 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Vue/06-Vue-cli-脚手架工具" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/01/Vue/06-Vue-cli-脚手架工具/">06-Vue-cli-脚手架工具</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/01/Vue/06-Vue-cli-脚手架工具/" class="archive-article-date">
+  	<time datetime="2017-06-01T10:21:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Vue-cli"><a href="#Vue-cli" class="headerlink" title="Vue-cli"></a>Vue-cli</h2><p><strong>Created By 小全同学</strong></p>
+<p>vue-cli是官方提供的一个脚手架工具(帮组写好基础代码).可以快速生成一个vue的项目模板</p>
+<p><strong>主要的功能</strong></p>
+<ul>
+<li>规范的目录结构</li>
+<li>本地调试</li>
+<li>代码部署</li>
+<li>热加载</li>
+<li>单元测试</li>
+</ul>
+<p><strong>vue-cli的优势</strong></p>
+<ul>
+<li>成熟的vue项目的架构设计</li>
+<li>本地测试服务器 node-server</li>
+<li>集成打包上线</li>
+</ul>
+<p><strong>环境要求</strong></p>
+<ul>
+<li>nodejs&gt;4.0</li>
+<li>git</li>
+<li>能够使用命令行的终端</li>
+</ul>
+<p>使用Vue-cli脚手架搭建项目架构</p>
+<ol>
+<li>CommonJS 或 ES6 模块</li>
+<li>使用 webpack 或 brower 打包</li>
+<li>单文件组件，把页面拆为多个小组件</li>
+<li>使用 vue-loader 进行转换</li>
+</ol>
+<h3 id="ES6-webpack-vue-loader-进行项目架构"><a href="#ES6-webpack-vue-loader-进行项目架构" class="headerlink" title="ES6 + webpack + vue-loader 进行项目架构"></a>ES6 + webpack + vue-loader 进行项目架构</h3><p><a href="https://github.com/vuejs-templates/webpack" target="_blank" rel="noopener">https://github.com/vuejs-templates/webpack</a></p>
+<p>npm版本要求为必须 3+</p>
+<h4 id="命令安装"><a href="#命令安装" class="headerlink" title="命令安装"></a>命令安装</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">安装vue-cli </span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install -g vue-cli  </span></span><br><span class="line"></span><br><span class="line">初始化项目</span><br><span class="line"><span class="meta">$</span><span class="bash"> vue init webpack project-name </span></span><br><span class="line"></span><br><span class="line">进入项目文件夹</span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> project-name </span></span><br><span class="line"></span><br><span class="line">安装所依赖的包</span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br><span class="line"></span><br><span class="line">开发环境运行</span><br><span class="line"><span class="meta">$</span><span class="bash"> npm run dev </span></span><br><span class="line"></span><br><span class="line">进行编译打包</span><br><span class="line"><span class="meta">$</span><span class="bash"> npm run build</span></span><br></pre></td></tr></table></figure>
+<h4 id="目录文件介绍"><a href="#目录文件介绍" class="headerlink" title="目录文件介绍"></a>目录文件介绍</h4><p><img src="http://og1y9bein.bkt.clouddn.com/20171226151427034718145.png" alt="20171226151427034718145.png"></p>
+<ul>
+<li><code>build</code>和<code>config</code>是webpack的配置文件</li>
+<li><code>node_modules</code>中存放的是<code>npm install</code>安装的文件依赖代码库</li>
+<li><code>src</code>文件是存放的是项目源码</li>
+<li><code>static</code>存放的是第三方的静态资源，里面只有<code>.gitkeep</code>这个文件的意思是当这个目录为空也是可以提交git代码仓库里，如果没有这个文件git会忽略这个目录</li>
+<li><code>.babelrc</code>这个文件是<code>babel</code>的一些配置,主要就是用于将es6的代码转成es5的,详细介绍：<a href="http://www.ruanyifeng.com/blog/2016/01/babel.html" target="_blank" rel="noopener">babel</a></li>
+<li><code>.editorconfig</code>是编辑器的一些配置</li>
+<li><code>.gitignore</code>用于向git声明需要忽略提交的文件</li>
+<li><code>.postcssrc.js</code>这个文件是postCSS的配置文件，postCSS是一款通过JS插件来转换CSS的工具，这些插件能帮你校验你的CSS代码、转换未来的CSS语法、支持变量和混写、以及内联图片等等，其中<a href="https://github.com/postcss/autoprefixer" target="_blank" rel="noopener">自动前缀</a>插件是PostCSS最受欢迎预处理器之一。默认就配置使用了<code>autoprefixer</code>也就是自动前缀的这个插件</li>
+<li><code>index.html</code>就是入口的html文件，在编译打包过程中会将资源文件插入到这个html文件中</li>
+<li><code>package.json</code>项目的配置文件，这个文件中是我们在初始化<code>vue-clic</code>的时候填入的信息：<ul>
+<li>最重要的就是里面的<code>scripts</code>属性，表示的是我们可以执行的一些命令,比如<code>npm run dev</code>就是执行的<code>node build/dev-server.js</code>这个命令，然后<code>npm run build</code>就是执行的<code>node build/build.js</code>也就是打包的操作，我们也自己在<code>scripts</code>中去配置一些脚本</li>
+<li><code>dependencies</code>里面放的项目生产环境的一些依赖，然后在安装一些模块的时候可以通过<code>--save</code>保存到这个属性下，比如要使用<code>vue-router</code>就可以使用<code>npm install vue-router --save</code></li>
+<li><code>devDependencies</code>里面放的编译过程中的一些依赖，在最后打包的时候不存在</li>
+</ul>
+</li>
+<li><code>README.md</code>就是项目的描述文件</li>
+</ul>
+<h4 id="项目运行"><a href="#项目运行" class="headerlink" title="项目运行"></a>项目运行</h4><p>项目的入口文件是<code>main.js</code>,然后在<code>main.js</code>中依赖<code>app.vue</code>，<code>app.vue</code>中又依赖了<code>hello.vue</code>这个组件</p>
+<p>一个标准组件的构成就是由<code>template, script, style</code>这三个标签构成，如果要在<code>app.vue</code>中使用<code>hello.vue</code>这个组件的话，需要把hello定义为app的子组件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="comment">// 引入模块</span></span><br><span class="line"><span class="keyword">import</span> Hello <span class="keyword">from</span> <span class="string">'./components/Hello'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">'app'</span>,</span><br><span class="line">  components: &#123; <span class="comment">// 声明为子组件</span></span><br><span class="line">    Hello</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/01/Vue/06-Vue-cli-脚手架工具/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Vue/03-生命周期" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
