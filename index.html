@@ -858,44 +858,53 @@
 
 
   
-    <article id="post-Vue/00-Vue基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Vue/09-axios" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/04/Vue/00-Vue基础/">00-Vue基础</a>
+      <a class="article-title" href="/2017/06/05/Vue/09-axios/">09-axios</a>
     </h1>
   
 
         
-        <a href="/2017/06/04/Vue/00-Vue基础/" class="archive-article-date">
-  	<time datetime="2017-06-04T06:33:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-04</time>
+        <a href="/2017/06/05/Vue/09-axios/" class="archive-article-date">
+  	<time datetime="2017-06-05T07:31:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="VueJS"><a href="#VueJS" class="headerlink" title="VueJS"></a>VueJS</h1><p><strong>Created By 小全同学</strong></p>
-<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fg3tmjasyyj30b40b40sk.jpg" alt=""></p>
-<p><strong>官网：<a href="https://cn.vuejs.org/" target="_blank" rel="noopener">https://cn.vuejs.org/</a></strong></p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
-<p>  数据驱动组件，为现代化的Web页面而生</p>
+        <h3 id="axios"><a href="#axios" class="headerlink" title="axios"></a>axios</h3><p><strong>Created By 小全同学</strong></p>
+<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>在vue升级到2.0后，官方就不再更新<code>vue-resourece</code>，vue官网也不再推荐<code>vue-resource</code>作为推荐的HTTP库，转而推荐使用<code>axios</code></p>
+<blockquote>
+<p>  Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。</p>
+<p>  Axios并不是Vue的一个模块！！</p>
 </blockquote>
-<p>  <strong>特点</strong></p>
-<ul>
-<li>简洁：HTML模板+JSON数据+Vue实例</li>
-<li>数据驱动：自动追踪依赖的模板表达式和计算属性</li>
-<li>组件化：用解耦、可复用的组件来构造世界</li>
-<li>轻量：~24kb的包，无依赖</li>
-<li>快速：精确有效的异步批量DOM更新</li>
-<li>模块友好：通过npm或bower安装，无缝融入你的工作流</li>
-</ul>
-<p><strong>Vue和其它框架的不同</strong></p>
-<p><a href="https://cn.vuejs.org/v2/guide/comparison.html" target="_blank" rel="noopener">对比其它框架 https://cn.vuejs.org/v2/guide/comparison.html</a></p>
-<h2 id="认知vue"><a href="#认知vue" class="headerlink" title="认知vue"></a>认知vue</h2><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">html</span></span><br><span class="line"><span class="xml"><span class="meta">&lt;!DOCTYPE html&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"vue.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><span class="template-variable">&#123;&#123; message &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span></span><br><span class="line"><span class="xml">        let vm = new Vue(&#123;</span></span><br><span class="line"><span class="xml">            el: '#app',</span></span><br><span class="line"><span class="xml">            data: &#123;</span></span><br><span class="line"><span class="xml">                message: 'Hello Vue'</span></span><br><span class="line"><span class="xml">            &#125;</span></span><br><span class="line"><span class="xml">        &#125;);</span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>尤大大原话：</p>
+<blockquote>
+<p>  最近团队讨论了一下，Ajax 本身跟 Vue 并没有什么需要特别整合的地方，使用 fetch polyfill 或是 axios、superagent 等等都可以起到同等的效果，vue-resource 提供的价值和其维护成本相比并不划算，所以决定在不久以后取消对 vue-resource 的官方推荐。已有的用户可以继续使用，但以后不再把 vue-resource 作为官方的 ajax 方案。</p>
+<p>  这里可以去掉 vue-resource，文档也不必翻译了。</p>
+</blockquote>
+<h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><ol>
+<li><p>安装</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> <span class="comment">--save axios</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>引入</p>
+ <figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">'axios'</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用</p>
+ <figure class="highlight scilab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="comment">// 为给定 ID 的 user 创建请求</span></span><br><span class="line">axios.get(<span class="string">'/user?ID=12345'</span>).<span class="keyword">then</span>(<span class="function"><span class="keyword">function</span> <span class="params">(response)</span> &#123;</span></span><br><span class="line">    console.<span class="built_in">log</span>(response);</span><br><span class="line">&#125;)</span><br><span class="line">.<span class="keyword">catch</span>(<span class="function"><span class="keyword">function</span> <span class="params">(error)</span> &#123;</span></span><br><span class="line">    console.<span class="built_in">log</span>(<span class="built_in">error</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 可选地，上面的请求可以这样做</span></span><br><span class="line">axios.get(<span class="string">'/user'</span>, &#123;</span><br><span class="line">    params: &#123;</span><br><span class="line">      ID: <span class="number">12345</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">.<span class="keyword">then</span>(<span class="function"><span class="keyword">function</span> <span class="params">(response)</span> &#123;</span></span><br><span class="line">    console.<span class="built_in">log</span>(response);</span><br><span class="line">&#125;)</span><br><span class="line">.<span class="keyword">catch</span>(<span class="function"><span class="keyword">function</span> <span class="params">(error)</span> &#123;</span></span><br><span class="line">    console.<span class="built_in">log</span>(<span class="built_in">error</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后因为axios并不是vue的插件所以不能用<code>Vue.use</code>,但可以将它添加到Vue的原型中。这样我们也可以像调用vue-resourece一样在组件中调用axios的方法</p>
+ <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">javascript</span><br><span class="line"><span class="comment">//将axios添加到vue的原型中</span></span><br><span class="line">Vue<span class="selector-class">.prototype</span><span class="selector-class">.axios</span> = axios</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><a href="http://www.kancloud.cn/yunye/axios/234845" target="_blank" rel="noopener">API地址：http://www.kancloud.cn/yunye/axios/234845</a></p>
+<p><a href="https://github.com/mzabriskie/axios" target="_blank" rel="noopener">Github地址：https://github.com/mzabriskie/axios</a></p>
 
       
 
@@ -908,7 +917,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/04/Vue/00-Vue基础/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/06/05/Vue/09-axios/">展开全文 >></a>
         </p>
       
 
